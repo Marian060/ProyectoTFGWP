@@ -1,0 +1,73 @@
+# ============================================
+# WORDPRESS CORE (NO subir nunca)
+# ============================================
+/wp-admin/
+/wp-includes/
+index.php
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+readme.html
+license.txt
+licencia.txt
+
+# ============================================
+# ARCHIVOS SENSIBLES
+# ============================================
+wp-config.php
+wp-config-sample.php
+.htaccess
+.ftpquota
+error_log
+
+# ============================================
+# IGNORAR TODO wp-content POR DEFECTO
+# (luego reactivamos SOLO lo que queremos)
+# ============================================
+wp-content/*
+
+# Mantener índice (opcional, no molesta)
+!wp-content/index.php
+
+# ============================================
+# SOLO versionar el TEMA ASTRA
+# (lo demás de wp-content se ignora)
+# ============================================
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/astra/
+
+# Si luego haces un child theme, añade algo así:
+# !wp-content/themes/astra-child/
+
+# ============================================
+# BACKUPS Y EXPORTACIONES
+# ============================================
+*.sql
+*.sql.gz
+*.zip
+*.tar
+*.gz
+*.wpress
+wp-content/ai1wm-backups/
+
+# ============================================
+# NODE (por si usas builder)
+# ============================================
+node_modules/
+npm-debug.log
+
+# ============================================
+# SISTEMA
+# ============================================
+.DS_Store
+Thumbs.db
