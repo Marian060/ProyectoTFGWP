@@ -31,23 +31,83 @@ error_log
 
 # ============================================
 # IGNORAR TODO wp-content POR DEFECTO
-# (luego reactivamos SOLO lo que queremos)
 # ============================================
 wp-content/*
 
-# Mantener índice (opcional, no molesta)
+# Mantener índice
 !wp-content/index.php
 
 # ============================================
-# SOLO versionar el TEMA ASTRA
-# (lo demás de wp-content se ignora)
+# PERMITIR TEMAS COMPLETOS
 # ============================================
 !wp-content/themes/
-wp-content/themes/*
-!wp-content/themes/astra/
+!wp-content/themes/**
 
-# Si luego haces un child theme, añade algo así:
-# !wp-content/themes/astra-child/
+# ============================================
+# PERMITIR PLUGINS (EXCEPTO LOS PESADOS)
+# ============================================
+!wp-content/plugins/
+!wp-content/plugins/**
+
+# ============================================
+# BLOQUEAR PLUGINS PESADOS (MUCHOS ARCHIVOS)
+# ============================================
+# WooCommerce
+wp-content/plugins/woocommerce/
+
+# WooCommerce Admin
+wp-content/plugins/woocommerce-admin/
+
+# WooCommerce Blocks
+wp-content/plugins/woocommerce-blocks/
+
+# Yoast SEO (muy pesado: trae AWS SDK)
+wp-content/plugins/wordpress-seo/
+
+# Newsletter
+wp-content/plugins/newsletter/
+
+# CMP Coming Soon (contiene API de Mailchimp)
+wp-content/plugins/cmp-coming-soon-maintenance/
+
+# WPVivid
+wp-content/plugins/wpvivid-backuprestore/
+
+# EWWW Image Optimizer
+wp-content/plugins/ewww-image-optimizer/
+
+# W3 Total Cache
+wp-content/plugins/w3-total-cache/
+
+# WP Rocket
+wp-content/plugins/wp-rocket/
+
+# ============================================
+# LIMPIEZA GENERAL DE BASURA
+# ============================================
+# caches internas
+wp-content/**/cache/
+wp-content/**/temp/
+
+# logs
+wp-content/**/logs/
+wp-content/**/log/
+wp-content/**/debug.log
+
+# staging y backups de plugins
+wp-content/wpvivid_staging/
+wp-content/wpvividbackups/
+
+# optimizadores
+wp-content/ewww/
+wp-content/w3tc-config/
+wp-content/wflogs/
+
+# ============================================
+# NO SUBIR UPLOADS (solo index.php)
+# ============================================
+wp-content/uploads/*
+!wp-content/uploads/index.php
 
 # ============================================
 # BACKUPS Y EXPORTACIONES
@@ -61,7 +121,7 @@ wp-content/themes/*
 wp-content/ai1wm-backups/
 
 # ============================================
-# NODE (por si usas builder)
+# NODE
 # ============================================
 node_modules/
 npm-debug.log

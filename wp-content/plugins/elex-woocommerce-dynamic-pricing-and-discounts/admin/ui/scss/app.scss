@@ -1,0 +1,20 @@
+@import "variables";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
+.elex-dynamic-pricing-wrap {
+    background-color:#FFF;
+    @import "../../../node_modules/bootstrap/scss/bootstrap";
+    @import "setting.scss";
+}
+.elex_dp_go_premium_color{
+    color: #008000 !important;
+
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected]{
+    background-color: #0073aa !important;
+    color: #fff !important;
+}

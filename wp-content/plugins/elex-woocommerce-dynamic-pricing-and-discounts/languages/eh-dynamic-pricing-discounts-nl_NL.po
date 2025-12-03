@@ -1,0 +1,1375 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ELEX Dynamic&nbsp;Pricing and Discounts for WooCommerce\n"
+"POT-Creation-Date: 2019-06-26 15:54+0530\n"
+"PO-Revision-Date: 2019-06-26 15:57+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: elex-woocommerce-dynamic-pricing-and-discounts.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/data/BOGO_category_rules/elex-save-options.php:73
+#: admin/data/buy_get_free_rules/elex-save-options.php:70
+#: admin/data/cart_rules/elex-save-options.php:72
+#: admin/data/cat_combinational_rules/elex-save-options.php:63
+#: admin/data/category_rules/elex-save-options.php:58
+#: admin/data/combinational_rules/elex-save-options.php:65
+#: admin/data/product_rules/elex-save-options.php:80
+#: admin/data/settings_page/elex-save-options.php:35
+#: admin/data/tag_rules/elex-save-options.php:59
+msgid "Saved Successfully"
+msgstr "Met succes opgeslagen"
+
+#: admin/data/BOGO_category_rules/elex-save-options.php:79
+#: admin/data/buy_get_free_rules/elex-save-options.php:76
+#: admin/data/cart_rules/elex-save-options.php:78
+#: admin/data/cat_combinational_rules/elex-save-options.php:69
+#: admin/data/category_rules/elex-save-options.php:64
+#: admin/data/combinational_rules/elex-save-options.php:71
+#: admin/data/product_rules/elex-save-options.php:86
+#: admin/data/settings_page/elex-save-options.php:41
+#: admin/data/tag_rules/elex-save-options.php:65
+msgid "Please Enter All Fields!! Then Save"
+msgstr "Vul alle velden in!! Sla"
+
+#: admin/data/BOGO_category_rules/elex-update-options.php:54
+#: admin/data/buy_get_free_rules/elex-update-options.php:50
+#: admin/data/cart_rules/elex-update-options.php:45
+#: admin/data/cat_combinational_rules/elex-update-options.php:49
+#: admin/data/category_rules/elex-update-options.php:33
+#: admin/data/combinational_rules/elex-update-options.php:43
+#: admin/data/product_rules/elex-update-options.php:51
+#: admin/data/tag_rules/elex-update-options.php:33
+msgid "Updated Successfully"
+msgstr "Succesvol bijgewerkt"
+
+#: admin/data/BOGO_category_rules/elex-update-options.php:60
+#: admin/data/buy_get_free_rules/elex-update-options.php:56
+#: admin/data/cart_rules/elex-update-options.php:51
+#: admin/data/cat_combinational_rules/elex-update-options.php:55
+#: admin/data/category_rules/elex-update-options.php:39
+#: admin/data/combinational_rules/elex-update-options.php:49
+#: admin/data/product_rules/elex-update-options.php:57
+#: admin/data/tag_rules/elex-update-options.php:39
+msgid "Please Enter All Fields ,Then Try To Update!!"
+msgstr "Vul alle velden, probeer dan te updaten!"
+
+#: admin/elex-admin-actions-function.php:29
+msgid "Dynamic Pricing"
+msgstr "Dynamische prijsstelling Hoofdpagina"
+
+#: admin/elex-importer.php:19 admin/elex-importer.php:109
+msgid "Please upload a file to import"
+msgstr "Upload een bestand dat u wilt importeren"
+
+#: admin/elex-importer.php:98 admin/elex-importer.php:132
+msgid "Imported Successfully!"
+msgstr "Succesvol geïmporteerd!"
+
+#: admin/elex-importer.php:140
+msgid "Please upload a valid .json  or .csv file"
+msgstr "Gelieve een geldig. json of. CSV bestand te uploaden"
+
+#: admin/view/tabs/elex-tabs-html-render.php:1
+msgid "Dynamic Pricing Main Page"
+msgstr "Dynamische prijsstelling Hoofdpagina"
+
+#: admin/view/tabs/elex-tabs-html-render.php:201
+msgid "Discount Rules"
+msgstr "Kortingsregels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:202
+msgid "Settings"
+msgstr "Instellingen"
+
+#: admin/view/tabs/elex-tabs-html-render.php:203
+msgid "Licence"
+msgstr "Licentie"
+
+#: admin/view/tabs/elex-tabs-html-render.php:204
+msgid "Import/Export"
+msgstr "Importeren/Exporteren"
+
+#: admin/view/tabs/elex-tabs-html-render.php:213
+msgid "Product Rules"
+msgstr "Product regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:215
+msgid "Combi Rules"
+msgstr "Combi regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:217
+msgid "Category Rules"
+msgstr "Categorie regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:219
+msgid "Category Combi Rules"
+msgstr "Categorie combi regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:221
+msgid "Cart Rules"
+msgstr "Cart regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:223
+msgid "BOGO Rules"
+msgstr "BOGO regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:225
+msgid "BOGO Category Rules"
+msgstr "BOGO categorie regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:227
+msgid "Tag Rules"
+msgstr "Tag regels"
+
+#: admin/view/tabs/elex-tabs-html-render.php:256
+msgid ""
+"Note - In this section every rule is executed individually for every "
+"product. Each product is a distinct entity."
+msgstr ""
+"Opmerking: in dit gedeelte wordt elke regel afzonderlijk voor elk product "
+"uitgevoerd. Elk product is een afzonderlijke entiteit."
+
+#: admin/view/tabs/elex-tabs-html-render.php:318
+msgid "All Rules Deleted Successfully!"
+msgstr "Alle regels met succes verwijderd!"
+
+#: admin/view/tabs/elex-tabs-html-render.php:344
+msgid "Update Rule"
+msgstr "Regel bijwerken"
+
+#: admin/view/tabs/elex-tabs-html-render.php:347
+msgid "Save Rule"
+msgstr "Bewaar regel"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:27
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:279
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:323
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:151
+msgid "Any category"
+msgstr "Elke categorie"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:94
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:52
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:58
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:60
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:74
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:72
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:60
+msgid "Rule"
+msgstr "Regel"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:104
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:57
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:63
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:65
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:79
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:77
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:65
+msgid "Adjustments"
+msgstr "Aanpassingen"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:104
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:109
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:62
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:68
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:70
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:84
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:82
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:70
+msgid "Allowed Roles & Date"
+msgstr "Toegestane rollen & datum"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:109
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:114
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:67
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:73
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:75
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:89
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:87
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:75
+msgid "Restrictions"
+msgstr "Beperkingen"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:119
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:124
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:82
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:83
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:85
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:97
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:85
+msgid "Offer name"
+msgstr "Naam van aanbieding"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:120
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:125
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:83
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:84
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:86
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:100
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:98
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:86
+msgid "Enter a descriptive offer name"
+msgstr "Een beschrijvende aanbiedings naam invoeren"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:121
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:126
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:84
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:85
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:87
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:101
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:87
+msgid ""
+"Name/Text of the offer to be displayed in the Offer Table. We suggest a "
+"detailed description of the discount."
+msgstr ""
+"Naam/tekst van het aanbod dat in de aanbiedings tabel moet worden "
+"weergegeven. Wij stellen een gedetailleerde beschrijving van de korting voor."
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:136
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:141
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:160
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:132
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:180
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:148
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:233
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:180
+msgid "Adjustment amount"
+msgstr "Correctiebedrag"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:137
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:142
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:161
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:133
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:181
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:149
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:234
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:181
+msgid "Adjust final discount amount by this amount"
+msgstr "Het uiteindelijke kortingsbedrag aanpassen met dit bedrag"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:150
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:162
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:174
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:146
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:194
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:162
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:253
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:194
+msgid "All"
+msgstr "Alle"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:174
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:198
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:170
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:218
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:278
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:218
+msgid "Valid from date"
+msgstr "Geldig vanaf datum"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:198
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:210
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:182
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:230
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:197
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:290
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:230
+msgid "Expiry date"
+msgstr "Vervaldatum"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:201
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:213
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:225
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:197
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:245
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:211
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:305
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:245
+msgid "Allowed Email Ids"
+msgstr "Toegestane e-mail-Id's"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:202
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:214
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:226
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:198
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:246
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:212
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:306
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:246
+msgid "Enter Email ids seperated by commas"
+msgstr "Voer e-mail-id's gescheiden door komma's"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:203
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:215
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:227
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:199
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:247
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:213
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:307
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:247
+msgid ""
+"Enter Email ids seperated by commas, for which you want to allow this rule. "
+"and leave blank to allow for all"
+msgstr ""
+"Geef e-mail-id's op die zijn gescheiden door komma's, waarvoor u deze regel "
+"wilt toestaan. en laat leeg te laten voor alle"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:210
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:222
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:234
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:206
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:254
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:220
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:314
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:254
+msgid "Minimum number of orders (previous orders)"
+msgstr "Minimum aantal orders (vorige bestellingen)"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:211
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:223
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:235
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:207
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:255
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:221
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:315
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:255
+msgid "Minimum count of preivious orders required for this rule to be executed"
+msgstr "Minimum aantal preivious orders vereist voor uitvoering van deze regel"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:223
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:235
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:247
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:219
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:267
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:233
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:327
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:267
+msgid "Minimum total spending (previous orders)"
+msgstr "Minimale totale uitgaven (vorige bestellingen)"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:224
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:236
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:248
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:220
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:268
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:234
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:328
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:268
+msgid ""
+"Minimum amount the user has spent till now for the rule to execute. total "
+"calculated from all previous orders"
+msgstr ""
+"Minimum bedrag dat de gebruiker heeft doorgebracht tot nu toe voor de regel "
+"uit te voeren. totaal berekend op basis van alle vorige orders"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:251
+msgid "Items in categories need to be purchased"
+msgstr "Artikelen in categorieën moeten worden aangeschaft"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:257
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:380
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:272
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:387
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:298
+msgid "Row no"
+msgstr "Rij nr"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:258
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:253
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:62
+msgid "Category Name"
+msgstr "Categorie Naam"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:259
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:63
+msgid "Check on"
+msgstr "Controle op"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:260
+msgid "Check min"
+msgstr "Controleer min"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:357
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:346
+msgid "Add Category"
+msgstr "Categorie toevoegen"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:358
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:347
+msgid "Delete Category"
+msgstr "Verwijder categorie"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:371
+msgid "Product to be set as free"
+msgstr "Product dat als vrij moet worden geplaatst"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:373
+msgid ""
+"Enter the products which will be set as free if all above products in "
+"respective quantities are purchased"
+msgstr ""
+"Voer de producten in die als vrij zullen worden geplaatst als alle "
+"bovengenoemde producten in respectieve hoeveelheden worden gekocht"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:381
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:273
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:388
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:299
+msgid "Product Name"
+msgstr "Productnaam"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:382
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:274
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:389
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:254
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:300
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:64
+msgid "Quantity"
+msgstr "Aantal"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:402
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:411
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:445
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:450
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:294
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:303
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:337
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:342
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:409
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:418
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:452
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:457
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:248
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:263
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:321
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:334
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:363
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:366
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:119
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:134
+#: includes/elex-common-functions.php:109
+#: includes/elex-common-functions.php:129
+msgid "Search for a product&hellip;"
+msgstr "Zoek naar een product&hellip;"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:472
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:364
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:479
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:383
+msgid "Add Product"
+msgstr "Product toevoegen"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:473
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:365
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:480
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:384
+msgid "Delete Product"
+msgstr "Product Verwijderen"
+
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:151
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:243
+msgid "Allow repeat execution"
+msgstr "Herhaal uitvoering toestaan"
+
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:152
+msgid ""
+"This rule will be executed multiple times based on quantity of the products "
+"in cart"
+msgstr ""
+"Deze regel wordt meerdere keren uitgevoerd op basis van de hoeveelheid "
+"producten in de winkelwagen"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:18
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:14
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:26
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:13
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:18
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:26
+msgid "Discount percentage"
+msgstr "Kortingspercentage"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:72
+msgid "Advance Restrictions"
+msgstr "Advance beperkingen"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:93
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:113
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:166
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:113
+msgid "Check for"
+msgstr "Controleren op"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:119
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:119
+msgid ""
+"The rules can be based on No. of items/Weight/Price/Total Units. \"No. of "
+"items\" denotes the number of distinct products. Whereas \"Total Units\" "
+"denotes the total no. of units of any product."
+msgstr ""
+"De regels kunnen worden gebaseerd op Nee. van items/gewicht/prijs/Total "
+"units. Geen. van items \"duidt het aantal verschillende producten aan. "
+"Terwijl \"Total units\" duidt op het totaal aantal. van de eenheden van een "
+"product."
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:104
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:124
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:176
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:124
+msgid "Minimum"
+msgstr "Minimum"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:105
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:125
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:177
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:125
+msgid "Minimum value to check"
+msgstr "Minimum waarde om te controleren"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:114
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:134
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:134
+msgid "Maximum"
+msgstr "Maximum"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:115
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:135
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:187
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:135
+msgid "Maximum value to check, set it empty for no limit"
+msgstr "Maximum waarde om te controleren, zet deze leeg voor No-Limit"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:124
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:96
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:144
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:112
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:197
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:144
+msgid "Discount type"
+msgstr "Kortingstype"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:129
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:149
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:117
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:202
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:149
+msgid ""
+"Three types of discounts can be applied – \"Percentage Discount/Flat "
+"Discount/Fixed Price\""
+msgstr ""
+"Drie soorten kortingen kunnen worden toegepast-\"percentage korting/platte "
+"korting/vaste prijs\""
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:134
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:106
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:154
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:122
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:207
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:154
+#: public/elex-dynamic-pricing-plugin-public.php:161
+#: public/elex-single-product-pricing-table.php:90
+#: public/elex-single-product-pricing-table.php:92
+msgid "Discount"
+msgstr "Korting"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:135
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:107
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:155
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:123
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:208
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:155
+msgid ""
+"If you select \"Percentage Discount\", the given percentage (value) would be "
+"discounted on each unit of the product in the cart.\n"
+"If you select \"Flat Discount\", the given amount (value) would be "
+"discounted at subtotal level in the cart\n"
+"If you select \"Fixed Price\", the original price of the product is replaced "
+"by the given fixed price (value)."
+msgstr ""
+"Als u \"percentage korting\" selecteert, zou het gegeven percentage (waarde) "
+"worden verdisconteerd op elke eenheid van het product in de kar.\n"
+"Als u \"platte korting\" selecteert, wordt het opgegeven bedrag (waarde) op "
+"subtotaal niveau in de winkelwagen verdisconteerd\n"
+"Als u \"vaste prijs\" selecteert, wordt de oorspronkelijke prijs van het "
+"product vervangen door de opgegeven vaste prijs (waarde)."
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:150
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:122
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:170
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:138
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:223
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:170
+msgid "Maximum discount amount"
+msgstr "Maximum kortingsbedrag"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:151
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:123
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:171
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:139
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:171
+msgid ""
+"After Calculation Discount Value Must Not Exceeed This Amount For This Rule"
+msgstr ""
+"Na berekening Kortingswaarde mag dit bedrag niet Exceeed voor deze regel"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:265
+msgid "Minimum Stock Limit"
+msgstr "Minimum voorraad limiet"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:266
+msgid "Minimum product stock required"
+msgstr "Minimum productvoorraad vereist"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:275
+msgid "Maximum Stock Limit"
+msgstr "Maximale voorraad limiet"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:276
+msgid "Maximum product stock required"
+msgstr "Maximale productvoorraad vereist"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:434
+msgid "Allowed Payment Methods"
+msgstr "Toegestane betalingsmethoden"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:455
+msgid "Allowed Shipping Methods"
+msgstr "Toegestane verzendmethoden"
+
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:101
+msgid ""
+"Three types of discounts can be applied – \"Percentage Discount/Flat "
+"Discount/Fixed Price”"
+msgstr ""
+"Drie soorten kortingen kunnen worden toegepast-\"percentage korting/platte "
+"korting/vaste prijs\""
+
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:252
+msgid "#Row no"
+msgstr "#Row geen"
+
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:96
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:150
+msgid "Product categories"
+msgstr "Productcategorieën"
+
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:97
+msgid "Select category"
+msgstr "Selecteer categorie"
+
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:108
+msgid "Select the category for which the rule would be applied."
+msgstr "Selecteer de categorie waarvoor de regel wordt toegepast."
+
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:247
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:262
+msgid "Apply discounts only on these products"
+msgstr "Pas kortingen toe op deze producten"
+
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:258
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:274
+msgid ""
+"Instead of applying discount on all items in this combination , you can "
+"apply discount only on some products of this combination"
+msgstr ""
+"In plaats van korting toe te passen op alle artikelen in deze combinatie, u "
+"korting toepassen op bepaalde producten van deze combinatie"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:58
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:215
+msgid "Options"
+msgstr "Opties"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:60
+msgid "Rule no."
+msgstr "Regel nr."
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:61
+msgid "Offer Name"
+msgstr "Naam van aanbieding"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:61
+msgid "Purchased Category"
+msgstr "Gekochte categorie"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:64
+msgid "Purchased Quantity"
+msgstr "Gekochte hoeveelheid"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:65
+msgid "Free Product"
+msgstr "Gratis product"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:66
+msgid "Free Quantity"
+msgstr "Vrije hoeveelheid"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:69
+msgid "Allowed Roles"
+msgstr "Toegestane ​​Rollen"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:70
+msgid "From Date"
+msgstr "Vanaf Datum"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:71
+msgid "To Date"
+msgstr "Tot Datum"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:72
+msgid "Adjustment"
+msgstr "Korting"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:73
+msgid "For Emails"
+msgstr "Voor E-mails"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:75
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:74
+msgid "Min Order Count"
+msgstr "Min. order telling"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:75
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:76
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:75
+msgid "Min Order Amt"
+msgstr "Min om Amt"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:81
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:84
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:89
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:83
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:85
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:84
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:87
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:85
+msgid ""
+"There are no rules created to create a rule click the \"Add New Rule\" "
+"button on top left-hand side."
+msgstr ""
+"Er zijn geen regels gemaakt om een regel te maken Klik op de \"Add New Rule"
+"\" knop aan de linker kant."
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:63
+msgid "Purchased Product"
+msgstr "Gekocht product"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:77
+msgid "Repeat"
+msgstr "Herhalen"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:64
+msgid "Min"
+msgstr "Min"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:65
+msgid "Max"
+msgstr "Max"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:66
+msgid "Discount Type"
+msgstr "Kortingstype"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:67
+msgid "Value"
+msgstr "Waarde"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:68
+msgid "Max Discount"
+msgstr "Max korting"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:75
+msgid "Attributes"
+msgstr "Eigenschappen"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:76
+msgid "Payment Gateways"
+msgstr "Betalingsmogelijkheden"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:77
+msgid "Shipping Methods"
+msgstr "Verzendmethoden"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:78
+msgid "Min Stock"
+msgstr "Min voorraad"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:79
+msgid "Max Stock"
+msgstr "Max voorraad"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:62
+msgid "Category"
+msgstr "Categorie"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:63
+msgid "Product"
+msgstr "Product"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:62
+msgid "Rule on"
+msgstr "Regel op"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:63
+msgid "Product/Category"
+msgstr "Product/categorie"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:62
+msgid "Tag Name"
+msgstr "Tag-naam"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:12
+msgid "Export Rules"
+msgstr "Export regels"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:14
+msgid "Export the rules to a JSON or CSV format (.json,.csv) file"
+msgstr ""
+"Exporteer de regels naar een JSON of CSV formaat (. json,. CSV) bestand"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:27
+msgid "Export to JSON"
+msgstr "Exporteren naar JSON"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:28
+msgid "Export to CSV"
+msgstr "Exporteer naar CSV"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:35
+msgid "JSON Importer"
+msgstr "JSON importeur"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:37
+msgid "Import the rules from a .json file."
+msgstr "Importeer de regels uit een. JSON-bestand."
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:60
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:87
+msgid "Import"
+msgstr "Importeren"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:67
+msgid "CSV Importer"
+msgstr "CSV Importeur"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:69
+msgid "Import the rules from a .csv file."
+msgstr "Importeer de regels uit een CSV-bestand."
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:99
+msgid "Restore Tabs"
+msgstr "Tabbladen terugzetten"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:107
+msgid "Rule applicable on"
+msgstr "Regel van toepassing op"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:112
+msgid ""
+"<u>Selected products:</u>The rule would be applied to the selected products "
+"individually.</br><u>Selected category:</u>This is different from the "
+"\"Category Rule\". In this case, the rule would be individually applied to "
+"all the products in the category.</br><u>Products in Cart:</u>Rule will be "
+"applied individually on each product in cart"
+msgstr ""
+"<u> geselecteerde producten: </u> De regel zou worden toegepast op de "
+"geselecteerde producten individueel. </br> <u> geselecteerde categorie: </u> "
+"Dit verschilt van de \"categorie regel\". In dit geval zou de regel "
+"individueel worden toegepast op alle producten in de categorie. </br> <u> "
+"producten in winkelwagen: </u> Regel zal individueel worden toegepast op elk "
+"product in de winkelwagen"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:118
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:133
+msgid "Products"
+msgstr "Producten"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:129
+msgid "The rule would be applied to the selected products individually."
+msgstr ""
+"De regel zou worden toegepast op de geselecteerde producten individueel."
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:145
+msgid "Rule to be applied on which products"
+msgstr "Regel die moet worden toegepast op welke producten"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:161
+msgid ""
+"This is different from the \"Category Rule\". In this case, the rule would "
+"be individually applied to all the products in the category."
+msgstr ""
+"Dit verschilt van de \"categorie regel\". In dit geval zou de regel "
+"individueel worden toegepast op alle producten in de categorie."
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:171
+msgid "The rules can be applied based on \"Quantity/Price/Weight\""
+msgstr ""
+"De regels kunnen worden toegepast op basis van \"hoeveelheid/prijs/gewicht\""
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:224
+msgid ""
+"This value is used to set up a limit for the discount. This is usually left "
+"blank if you do not want to limit the discount."
+msgstr ""
+"Deze waarde wordt gebruikt om een limiet voor de korting in te stellen. Dit "
+"wordt meestal leeg gelaten als u de korting niet wilt beperken."
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:244
+msgid ""
+"This rule will be executed if the total quantity of the product is a "
+"multiple of the min/max quantity set in the \"Rule\" section. Note that for "
+"this to work the min and the max quantity has to be equal."
+msgstr ""
+"Deze regel wordt uitgevoerd als de totale hoeveelheid van het product een "
+"veelvoud is van de hoeveelheid min/max die is ingesteld in de sectie ' regel "
+"'. Merk op dat om dit te werken de min en de Max hoeveelheid moet gelijk "
+"zijn."
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:162
+msgid "Execution Order"
+msgstr "Volgorde van uitvoering"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:300
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:334
+msgid "Before Product"
+msgstr "Vóór product"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:301
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:335
+msgid "After Product"
+msgstr "Na product"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:302
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:336
+msgid "Before Product Summary"
+msgstr "Voor product overzicht"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:303
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:337
+msgid "In Product Summary"
+msgstr "In product overzicht"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:304
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:338
+msgid "After Product Summary"
+msgstr "Na product overzicht"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:305
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:339
+msgid "Before Add To Cart Button"
+msgstr "Voordat toevoegen aan winkelwagentje knop"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:306
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:340
+msgid "After Add To Cart Button"
+msgstr "Na toevoegen aan winkelwagentje knop"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:307
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:341
+msgid "Before Add To Cart Form"
+msgstr "Voordat toevoegen aan winkelwagentje formulier"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:308
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:342
+msgid "After Add To Cart Form"
+msgstr "Na het toevoegen aan winkelwagen formulier"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:309
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:343
+msgid "Product Thumbnails"
+msgstr "Product Thumbnails"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:310
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:344
+msgid "Product Meta Start"
+msgstr "Product meta start"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:311
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:345
+msgid "Product Meta End"
+msgstr "Product meta einde"
+
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:96
+msgid "Product tags"
+msgstr "Product tags"
+
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:97
+msgid "Select tags"
+msgstr ""
+"Selecteer \n"
+"tags"
+
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:108
+msgid "Select the tag for which the rule would be applied."
+msgstr "De code selecteren waarvoor de regel wordt toegepast."
+
+#: elex-woocommerce-dynamic-pricing-and-discounts.php:42
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete Dynamic Pricing and "
+"Discounts for WooCommerce Basic Version and then try again"
+msgstr ""
+"Oeps! U probeerde installerend de premieversie zonder de basisversie te "
+"desactiveren en te schrappen. Vriendelijk deactiveren en verwijderen van "
+"dynamische prijzen en kortingen voor WooCommerce Basic versie en probeer het "
+"opnieuw"
+
+#: elex-woocommerce-dynamic-pricing-and-discounts.php:127
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: elex-woocommerce-dynamic-pricing-and-discounts.php:128
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: includes/elex-common-functions.php:297
+#, php-format
+msgctxt "Price range: from-to"
+msgid "%1$s &ndash; %2$s"
+msgstr "%1$s &ndash; %2$s"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:367
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"De licentiesleutel voor %s is verlopen. Een licentiesleutel of abonnement "
+"kunt u via uw account <a href=\"%s\" target=\"_blank\">dashboard</a> laten "
+"her-activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:378
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Het abonnement voor %s is gepauzeerd. Een licentiesleutel of abonnement kunt "
+"u via uw account <a href=\"%s\" target=\"_blank\">dashboard</a> laten her-"
+"activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:389
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+"Het abonnement voor %s is geannuleerd. Een licentiesleutel of abonnement "
+"kunt u via uw account <a href=\"%s\" target=\"_blank\">dashboard</a> laten "
+"her-activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:400
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Het abonnement voor %s is verlopen. Een licentiesleutel of abonnement kunt u "
+"via uw account <a href=\"%s\" target=\"_blank\">dashboard</a> laten her-"
+"activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:411
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Het abonnement voor %s is opgeschort. Een licentiesleutel of abonnement kunt "
+"u via uw account <a href=\"%s\" target=\"_blank\">dashboard</a> laten her-"
+"activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:422
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Het abonnement voor %s is nog in behandeling. Een licentiesleutel of "
+"abonnement kunt u via uw account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a> laten her-activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:433
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"Het abonnement voor %s is verplaatst naar de prullenbak en zal spoedig "
+"definitief worden verwijderd. Een licentiesleutel of abonnement kunt u via "
+"uw account <a href=\"%s\" target=\"_blank\">dashboard</a> laten her-"
+"activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:444
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Het abonnement voor %s is niet gevonden. Een licentiesleutel of abonnement "
+"kunt u via uw account <a href=\"%s\" target=\"_blank\">dashboard</a> laten "
+"her-activeren, verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:455
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"Een licentiesleutel voor% s kon niet worden gevonden. Misschien bent u "
+"vergeten een licentiecode in te voeren bij het instellen van% s, of is de "
+"sleutel gedeactiveerd in uw account. U kunt de licentiecode opnieuw "
+"activeren op uw <a href=\"%s\" target=\"_blank\"> instellingenpagina </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:466
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"De downloadrechten voor %s zijn ingetrokken omdat de licentiesleutel of het "
+"abonnement is verlopen. Een licentiesleutel of abonnement kunt u via uw "
+"account <a href=\"%s\" target=\"_blank\">dashboard</a> laten her-activeren, "
+"verlengen of aanschaffen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:477
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+"% s is niet geactiveerd. Ga naar de <a href=\"%s\" target=\"_blank\"> "
+"instellingenpagina </a> en voer de licentiesleutel en licentie-e-mail in om"
+"% s te activeren."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:488
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"U heeft het abonnement voor %s gewijzigd. Uw nieuwe API licentiesleutel moet "
+"opnieuw, via de License Manager pagina worden ingevuld. Indien u de "
+"licentiesleutel niet per e-mail van ons heeft ontvangen, dan kunt u deze "
+"ophalen via uw account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:181
+msgid "ELEX Plugins You May Be Interested In"
+msgstr "ELEX plugins u wellicht geïnteresseerd in"
+
+#: jquery-ui/%00.desktop:3
+msgid "unknown"
+msgstr "onbekend"
+
+#: jquery-ui/%00.desktop:4
+#, fuzzy
+msgid "%00"
+msgstr "% 00"
+
+#: public/elex-dynamic-pricing-plugin-public.php:164
+msgid "Discount Adjustment"
+msgstr "Korting aanpassing"
+
+#: public/elex-new-calculation-handler.php:388
+#, php-format
+msgctxt "Price range: from-to"
+msgid "%1$s&ndash;%2$s"
+msgstr "%1$s&ndash;%2$s"
+
+#: public/elex-new-calculation-handler.php:392
+msgid "Free!"
+msgstr "Gratis!"
+
+#: public/elex-single-product-offer-table.php:27
+msgid "Offers"
+msgstr "Aanbiedingen"
+
+#: public/elex-single-product-pricing-table.php:38
+msgid "Bulk Product Offers"
+msgstr "Bulk product aanbiedingen"
+
+#: public/elex-single-product-pricing-table.php:41
+msgid "Min Buy"
+msgstr "Min kopen"
+
+#: public/elex-single-product-pricing-table.php:41
+msgid "Max Buy"
+msgstr "Max kopen"
+
+#: public/elex-single-product-pricing-table.php:41
+msgid "Offer"
+msgstr "Aanbieding"
+
+#: public/elex-single-product-pricing-table.php:48
+#, fuzzy
+msgid "nos"
+msgstr "Nos"
+
+#: public/elex-single-product-pricing-table.php:87
+msgid " "
+msgstr " "
+
+#: public/elex-single-product-pricing-table.php:94
+msgid "Fixed Price"
+msgstr "Vaste prijs"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "ELEX Dynamic&nbsp;Pricing and Discounts for WooCommerce"
+msgstr "ELEX dynamische &nbsp; prijzen en kortingen voor WooCommerce"
+
+#. Plugin URI of the plugin/theme
+#, fuzzy
+msgid ""
+"https://elextensions.com/plugin/dynamic-pricing-and-discounts-plugin-for-"
+"woocommerce/"
+msgstr ""
+"https://elextensions.com/plugin/dynamic-pricing-and-discounts-plugin-for-"
+"woocommerce/"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin helps you to set discounts and pricing dynamically based on "
+"minimum quantity,weight,price and allow you to set maximum allowed discounts "
+"on every rule."
+msgstr ""
+"Deze plugin helpt u om kortingen en prijzen dynamisch op basis van minimale "
+"hoeveelheid, gewicht, prijs en u maximaal toegestane kortingen op elke regel "
+"in te stellen."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "ELEX"
+msgstr "ELEX"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://elextensions.com"
+msgstr "https://elextensions.com"

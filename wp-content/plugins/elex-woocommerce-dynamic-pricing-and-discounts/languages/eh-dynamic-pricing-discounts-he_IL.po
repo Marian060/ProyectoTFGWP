@@ -1,0 +1,1341 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ELEX Dynamic&nbsp;Pricing and Discounts for WooCommerce\n"
+"POT-Creation-Date: 2019-06-26 15:38+0530\n"
+"PO-Revision-Date: 2019-06-26 15:43+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: elex-woocommerce-dynamic-pricing-and-discounts.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/data/BOGO_category_rules/elex-save-options.php:73
+#: admin/data/buy_get_free_rules/elex-save-options.php:70
+#: admin/data/cart_rules/elex-save-options.php:72
+#: admin/data/cat_combinational_rules/elex-save-options.php:63
+#: admin/data/category_rules/elex-save-options.php:58
+#: admin/data/combinational_rules/elex-save-options.php:65
+#: admin/data/product_rules/elex-save-options.php:80
+#: admin/data/settings_page/elex-save-options.php:35
+#: admin/data/tag_rules/elex-save-options.php:59
+msgid "Saved Successfully"
+msgstr "נשמר בהצלחה"
+
+#: admin/data/BOGO_category_rules/elex-save-options.php:79
+#: admin/data/buy_get_free_rules/elex-save-options.php:76
+#: admin/data/cart_rules/elex-save-options.php:78
+#: admin/data/cat_combinational_rules/elex-save-options.php:69
+#: admin/data/category_rules/elex-save-options.php:64
+#: admin/data/combinational_rules/elex-save-options.php:71
+#: admin/data/product_rules/elex-save-options.php:86
+#: admin/data/settings_page/elex-save-options.php:41
+#: admin/data/tag_rules/elex-save-options.php:65
+msgid "Please Enter All Fields!! Then Save"
+msgstr "אנא הכנס את כל השדות! לאחר מכן שמור"
+
+#: admin/data/BOGO_category_rules/elex-update-options.php:54
+#: admin/data/buy_get_free_rules/elex-update-options.php:50
+#: admin/data/cart_rules/elex-update-options.php:45
+#: admin/data/cat_combinational_rules/elex-update-options.php:49
+#: admin/data/category_rules/elex-update-options.php:33
+#: admin/data/combinational_rules/elex-update-options.php:43
+#: admin/data/product_rules/elex-update-options.php:51
+#: admin/data/tag_rules/elex-update-options.php:33
+msgid "Updated Successfully"
+msgstr "עודכן בהצלחה"
+
+#: admin/data/BOGO_category_rules/elex-update-options.php:60
+#: admin/data/buy_get_free_rules/elex-update-options.php:56
+#: admin/data/cart_rules/elex-update-options.php:51
+#: admin/data/cat_combinational_rules/elex-update-options.php:55
+#: admin/data/category_rules/elex-update-options.php:39
+#: admin/data/combinational_rules/elex-update-options.php:49
+#: admin/data/product_rules/elex-update-options.php:57
+#: admin/data/tag_rules/elex-update-options.php:39
+msgid "Please Enter All Fields ,Then Try To Update!!"
+msgstr "נא הזן את כל השדות ולאחר מכן נסה לעדכן!!"
+
+#: admin/elex-admin-actions-function.php:29
+msgid "Dynamic Pricing"
+msgstr "תמחור דינאמי"
+
+#: admin/elex-importer.php:19 admin/elex-importer.php:109
+msgid "Please upload a file to import"
+msgstr "נא טען קובץ לייבוא"
+
+#: admin/elex-importer.php:98 admin/elex-importer.php:132
+msgid "Imported Successfully!"
+msgstr "הייבוא בוצע בהצלחה!"
+
+#: admin/elex-importer.php:140
+msgid "Please upload a valid .json  or .csv file"
+msgstr "נא העלה קובץ בתוקף. json או csv"
+
+#: admin/view/tabs/elex-tabs-html-render.php:1
+msgid "Dynamic Pricing Main Page"
+msgstr "עמוד ראשי של תמחור דינאמי"
+
+#: admin/view/tabs/elex-tabs-html-render.php:201
+msgid "Discount Rules"
+msgstr "כללי הנחה"
+
+#: admin/view/tabs/elex-tabs-html-render.php:202
+msgid "Settings"
+msgstr "הגדרות"
+
+#: admin/view/tabs/elex-tabs-html-render.php:203
+msgid "Licence"
+msgstr "רשיון"
+
+#: admin/view/tabs/elex-tabs-html-render.php:204
+msgid "Import/Export"
+msgstr "ייבוא/ייצוא"
+
+#: admin/view/tabs/elex-tabs-html-render.php:213
+msgid "Product Rules"
+msgstr "כללי המוצר"
+
+#: admin/view/tabs/elex-tabs-html-render.php:215
+msgid "Combi Rules"
+msgstr "כללי קומבי"
+
+#: admin/view/tabs/elex-tabs-html-render.php:217
+msgid "Category Rules"
+msgstr "כללי קטגוריה"
+
+#: admin/view/tabs/elex-tabs-html-render.php:219
+msgid "Category Combi Rules"
+msgstr "כללי הקטגוריה קומבי"
+
+#: admin/view/tabs/elex-tabs-html-render.php:221
+msgid "Cart Rules"
+msgstr "כללי עגלה"
+
+#: admin/view/tabs/elex-tabs-html-render.php:223
+msgid "BOGO Rules"
+msgstr "חוקי BOGO"
+
+#: admin/view/tabs/elex-tabs-html-render.php:225
+msgid "BOGO Category Rules"
+msgstr "כללי קטגוריית BOGO"
+
+#: admin/view/tabs/elex-tabs-html-render.php:227
+msgid "Tag Rules"
+msgstr "כללי תיוג"
+
+#: admin/view/tabs/elex-tabs-html-render.php:256
+msgid ""
+"Note - In this section every rule is executed individually for every "
+"product. Each product is a distinct entity."
+msgstr ""
+"הערה-בסעיף זה כל כלל מבוצע בנפרד עבור כל מוצר. כל מוצר הוא ישות מובחנת."
+
+#: admin/view/tabs/elex-tabs-html-render.php:318
+msgid "All Rules Deleted Successfully!"
+msgstr "כל הכללים נמחקו בהצלחה!"
+
+#: admin/view/tabs/elex-tabs-html-render.php:344
+msgid "Update Rule"
+msgstr "לעדכן כלל"
+
+#: admin/view/tabs/elex-tabs-html-render.php:347
+msgid "Save Rule"
+msgstr "שמור כלל"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:27
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:279
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:323
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:151
+msgid "Any category"
+msgstr "כל קטגוריה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:94
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:52
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:58
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:60
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:74
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:72
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:60
+msgid "Rule"
+msgstr "כלל"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:104
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:57
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:63
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:65
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:79
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:77
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:65
+msgid "Adjustments"
+msgstr "תאמות"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:104
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:109
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:62
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:68
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:70
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:84
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:82
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:70
+msgid "Allowed Roles & Date"
+msgstr "& תפקידים מותרים תאריך"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:109
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:114
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:67
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:73
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:75
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:89
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:87
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:75
+msgid "Restrictions"
+msgstr "הגבלות"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:119
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:124
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:82
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:83
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:85
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:97
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:85
+msgid "Offer name"
+msgstr "שם הצעה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:120
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:125
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:83
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:84
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:86
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:100
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:98
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:86
+msgid "Enter a descriptive offer name"
+msgstr "הזן שם הצעה תיאורית"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:121
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:126
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:84
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:85
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:87
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:101
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:87
+msgid ""
+"Name/Text of the offer to be displayed in the Offer Table. We suggest a "
+"detailed description of the discount."
+msgstr ""
+"שם/טקסט של ההצעה שתוצג בטבלה ' הצעה '. אנו מציעים תיאור מפורט של ההנחה."
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:136
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:141
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:160
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:132
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:180
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:148
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:233
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:180
+msgid "Adjustment amount"
+msgstr "סכום התאמה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:137
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:142
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:161
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:133
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:181
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:149
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:234
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:181
+msgid "Adjust final discount amount by this amount"
+msgstr "התאם סכום הנחה סופי לפי סכום זה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:150
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:162
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:174
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:146
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:194
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:162
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:253
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:194
+msgid "All"
+msgstr "הכל"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:174
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:198
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:170
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:218
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:278
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:218
+msgid "Valid from date"
+msgstr "תוקף מתאריך"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:198
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:210
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:182
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:230
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:197
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:290
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:230
+msgid "Expiry date"
+msgstr "תאריך תפוגה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:201
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:213
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:225
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:197
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:245
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:211
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:305
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:245
+msgid "Allowed Email Ids"
+msgstr "מזהי דואר אלקטרוני מותרים"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:202
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:214
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:226
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:198
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:246
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:212
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:306
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:246
+msgid "Enter Email ids seperated by commas"
+msgstr "הזן מזהי דואר אלקטרוני המופרדים באמצעות פסיקים"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:203
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:215
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:227
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:199
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:247
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:213
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:307
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:247
+msgid ""
+"Enter Email ids seperated by commas, for which you want to allow this rule. "
+"and leave blank to allow for all"
+msgstr ""
+"הזן מזהי דואר אלקטרוני המופרדים באמצעות פסיקים, שעבורם ברצונך לאפשר כלל זה. "
+"ולהשאיר ריק כדי לאפשר את כל"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:210
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:222
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:234
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:206
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:254
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:220
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:314
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:254
+msgid "Minimum number of orders (previous orders)"
+msgstr "מספר מינימלי של הזמנות (הזמנות קודמות)"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:211
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:223
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:235
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:207
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:255
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:221
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:315
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:255
+msgid "Minimum count of preivious orders required for this rule to be executed"
+msgstr "מספר מינימלי של הזמנות preivious הנדרשות עבור כלל זה להתבצע"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:223
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:235
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:247
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:219
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:267
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:233
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:327
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:267
+msgid "Minimum total spending (previous orders)"
+msgstr "סה כ הוצאות מינימליות (הזמנות קודמות)"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:224
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:236
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:248
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:220
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:268
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:234
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:328
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:268
+msgid ""
+"Minimum amount the user has spent till now for the rule to execute. total "
+"calculated from all previous orders"
+msgstr ""
+"סכום מינימלי שהמשתמש בילה עד עתה כדי שהכלל יבצע את ההפעלה. מחושב כולל מכל "
+"ההזמנות הקודמות"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:251
+msgid "Items in categories need to be purchased"
+msgstr "יש לרכוש פריטים בקטגוריות"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:257
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:380
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:272
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:387
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:298
+msgid "Row no"
+msgstr "שורה לא"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:258
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:253
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:62
+msgid "Category Name"
+msgstr "שם הקטגוריה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:259
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:63
+msgid "Check on"
+msgstr ". תבדקי את זה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:260
+msgid "Check min"
+msgstr "בדיקת מינימום"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:357
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:346
+msgid "Add Category"
+msgstr "הוספת קטגוריה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:358
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:347
+msgid "Delete Category"
+msgstr "מחיקת קטגוריה"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:371
+msgid "Product to be set as free"
+msgstr "מוצר שניתן להגדיר כחופשי"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:373
+msgid ""
+"Enter the products which will be set as free if all above products in "
+"respective quantities are purchased"
+msgstr ""
+"הזן את המוצרים אשר להגדיר בחינם אם כל המוצרים לעיל בכמויות המתאימות נרכשים"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:381
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:273
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:388
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:299
+msgid "Product Name"
+msgstr "שם המוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:382
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:274
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:389
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:254
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:300
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:64
+msgid "Quantity"
+msgstr "כמות"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:402
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:411
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:445
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:450
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:294
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:303
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:337
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:342
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:409
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:418
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:452
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:457
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:248
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:263
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:321
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:334
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:363
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:366
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:119
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:134
+#: includes/elex-common-functions.php:109
+#: includes/elex-common-functions.php:129
+msgid "Search for a product&hellip;"
+msgstr "חפש מוצר&hellip;"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:472
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:364
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:479
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:383
+msgid "Add Product"
+msgstr "הוסף מוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-BOGO_category_rule-tab.php:473
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:365
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:480
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:384
+msgid "Delete Product"
+msgstr "מחק מוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:151
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:243
+msgid "Allow repeat execution"
+msgstr "אפשר ביצוע חזרה"
+
+#: admin/view/tabs/selected-tab-content/elex-buy_get_free_rule-tab.php:152
+msgid ""
+"This rule will be executed multiple times based on quantity of the products "
+"in cart"
+msgstr "כלל זה יבוצע מספר פעמים בהתבסס על כמות המוצרים בעגלה"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:18
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:14
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:26
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:13
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:18
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:26
+msgid "Discount percentage"
+msgstr "אחוז הנחה"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:72
+msgid "Advance Restrictions"
+msgstr "הגבלות מתקדמות"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:93
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:113
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:166
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:113
+msgid "Check for"
+msgstr "בדוק אם יש"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:99
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:119
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:119
+msgid ""
+"The rules can be based on No. of items/Weight/Price/Total Units. \"No. of "
+"items\" denotes the number of distinct products. Whereas \"Total Units\" "
+"denotes the total no. of units of any product."
+msgstr ""
+". החוקים יכולים להתבסס על לא של פריטים/משקל/מחיר/סה ' ' כ יחידות. לא. של "
+"פריטים \"מציין את מספר המוצרים הנפרדים. הואיל והיחידות הכוללות מציין את "
+"הסכום הכללי. של יחידות של מוצר כלשהו."
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:104
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:124
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:176
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:124
+msgid "Minimum"
+msgstr "מינימום"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:105
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:125
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:177
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:125
+msgid "Minimum value to check"
+msgstr "ערך מינימלי לבדיקה"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:114
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:134
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:186
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:134
+msgid "Maximum"
+msgstr "מקסימום"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:115
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:135
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:187
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:135
+msgid "Maximum value to check, set it empty for no limit"
+msgstr "הערך המירבי שיש לבדוק, הגדר אותו ריק ללא הגבלה"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:124
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:96
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:144
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:112
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:197
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:144
+msgid "Discount type"
+msgstr "סוג הנחה"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:129
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:149
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:117
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:202
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:149
+msgid ""
+"Three types of discounts can be applied – \"Percentage Discount/Flat "
+"Discount/Fixed Price\""
+msgstr "ניתן להחיל שלושה סוגי הנחות – \"הנחה באחוזים/הנחה שטוחה/מחיר קבוע\""
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:134
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:106
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:154
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:122
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:207
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:154
+#: public/elex-dynamic-pricing-plugin-public.php:161
+#: public/elex-single-product-pricing-table.php:90
+#: public/elex-single-product-pricing-table.php:92
+msgid "Discount"
+msgstr "הנחה"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:135
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:107
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:155
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:123
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:208
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:155
+msgid ""
+"If you select \"Percentage Discount\", the given percentage (value) would be "
+"discounted on each unit of the product in the cart.\n"
+"If you select \"Flat Discount\", the given amount (value) would be "
+"discounted at subtotal level in the cart\n"
+"If you select \"Fixed Price\", the original price of the product is replaced "
+"by the given fixed price (value)."
+msgstr ""
+"אם תבחר באפשרות \"הנחת אחוזים\", האחוז הנתון (ערך) יהיה מוזל בכל יחידת המוצר "
+"בעגלה.\n"
+"אם תבחר באפשרות \"הנחה שטוחה\", הסכום הנתון (הערך) יהיה מוזל ברמת סכום "
+"הביניים בעגלה\n"
+"אם תבחר באפשרות \"מחיר קבוע\", המחיר המקורי של המוצר יוחלף במחיר הקבוע (ערך) "
+"הנתון."
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:150
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:122
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:170
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:138
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:223
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:170
+msgid "Maximum discount amount"
+msgstr "סכום הנחה מירבי"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:151
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:123
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:171
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:139
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:171
+msgid ""
+"After Calculation Discount Value Must Not Exceeed This Amount For This Rule"
+msgstr "לאחר שערך הנחת החישוב אינו מExceeed כמות זו עבור כלל זה"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:265
+msgid "Minimum Stock Limit"
+msgstr "מגבלת מניות מינימליות"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:266
+msgid "Minimum product stock required"
+msgstr "נדרש מניות מינימום למוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:275
+msgid "Maximum Stock Limit"
+msgstr "מגבלת המניה המירבית"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:276
+msgid "Maximum product stock required"
+msgstr "נדרש מניות מרביות למוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:434
+msgid "Allowed Payment Methods"
+msgstr "שיטות תשלום מותרות"
+
+#: admin/view/tabs/selected-tab-content/elex-cart-rule-tab.php:455
+msgid "Allowed Shipping Methods"
+msgstr "שיטות משלוח מותרות"
+
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:101
+msgid ""
+"Three types of discounts can be applied – \"Percentage Discount/Flat "
+"Discount/Fixed Price”"
+msgstr "ניתן להחיל שלושה סוגי הנחות – \"הנחה באחוזים/הנחה שטוחה/מחיר קבוע\""
+
+#: admin/view/tabs/selected-tab-content/elex-cat-combinational-rule-tab.php:252
+msgid "#Row no"
+msgstr "Row לא"
+
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:96
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:150
+msgid "Product categories"
+msgstr "קטגוריות מוצרים"
+
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:97
+msgid "Select category"
+msgstr "בחר קטגוריה"
+
+#: admin/view/tabs/selected-tab-content/elex-category-rule-tab.php:108
+msgid "Select the category for which the rule would be applied."
+msgstr "בחר את הקטגוריה שאליה תוחל הכלל."
+
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:247
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:262
+msgid "Apply discounts only on these products"
+msgstr "החלת הנחות רק על מוצרים אלה"
+
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:258
+#: admin/view/tabs/selected-tab-content/elex-combinational-rule-tab.php:274
+msgid ""
+"Instead of applying discount on all items in this combination , you can "
+"apply discount only on some products of this combination"
+msgstr ""
+"במקום להחיל הנחה על כל הפריטים בשילוב זה, באפשרותך להחיל הנחה רק על חלק "
+"מהמוצרים של שילוב זה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:58
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:215
+msgid "Options"
+msgstr "אפשרויות"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:59
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:60
+msgid "Rule no."
+msgstr ". כלל לא"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:60
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:61
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:61
+msgid "Offer Name"
+msgstr "שם הצעה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:61
+msgid "Purchased Category"
+msgstr "קטגוריית רכישה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:62
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:64
+msgid "Purchased Quantity"
+msgstr "כמות שנרכשה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:65
+msgid "Free Product"
+msgstr "מוצר חופשי"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:66
+msgid "Free Quantity"
+msgstr "כמות חופשית"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:69
+msgid "Allowed Roles"
+msgstr "תפקידים מותרים"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:70
+msgid "From Date"
+msgstr "מתאריך"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:71
+msgid "To Date"
+msgstr "עד תאריך"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:72
+msgid "Adjustment"
+msgstr "תאמה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:73
+msgid "For Emails"
+msgstr "עבור הודעות דוא ל"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:70
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:72
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:75
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:74
+msgid "Min Order Count"
+msgstr "ספירת הזמנות מינימום"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:71
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:73
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:75
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:76
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:75
+msgid "Min Order Amt"
+msgstr "סכום הזמנה מינימלית"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-BOGO_category_rules-table.php:81
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:84
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:89
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:83
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:85
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:84
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:87
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:85
+msgid ""
+"There are no rules created to create a rule click the \"Add New Rule\" "
+"button on top left-hand side."
+msgstr ""
+"אין כללים שנוצרו כדי ליצור כלל לחץ על לחצן \"הוסף כלל חדש\" בצד שמאל למעלה."
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:63
+msgid "Purchased Product"
+msgstr "מוצר נרכש"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-buy_get_free_rules-table.php:74
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:77
+msgid "Repeat"
+msgstr "חזרה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:63
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:64
+msgid "Min"
+msgstr "מינימום"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:65
+msgid "Max"
+msgstr "מקסימום"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:64
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:66
+msgid "Discount Type"
+msgstr "סוג הנחה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:65
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:67
+msgid "Value"
+msgstr "ערך"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:66
+#: admin/view/tabs/selected-tab-content/elex-display-saved-category_rules-table.php:68
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:67
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:69
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:68
+msgid "Max Discount"
+msgstr "מקס הנחה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:75
+msgid "Attributes"
+msgstr "מאפיינים"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:76
+msgid "Payment Gateways"
+msgstr "אמצעי תשלום"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:77
+msgid "Shipping Methods"
+msgstr "שיטות משלוח"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:78
+msgid "Min Stock"
+msgstr "מניות מין"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cart_rules-table.php:79
+msgid "Max Stock"
+msgstr "מלאי מקסימלי"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-cat_combinational_rules-table.php:62
+msgid "Category"
+msgstr "קטגוריה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-combinational_rules-table.php:63
+msgid "Product"
+msgstr "מוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:62
+msgid "Rule on"
+msgstr "הכלל על"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-product_rules-table.php:63
+msgid "Product/Category"
+msgstr "מוצר/קטגוריה"
+
+#: admin/view/tabs/selected-tab-content/elex-display-saved-tag_rules-table.php:62
+msgid "Tag Name"
+msgstr "תגית שם"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:12
+msgid "Export Rules"
+msgstr "כללי ייצוא"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:14
+msgid "Export the rules to a JSON or CSV format (.json,.csv) file"
+msgstr "ייצוא הכללים לתבנית JSON או CSV (קובץ. JSON, csv)"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:27
+msgid "Export to JSON"
+msgstr "ייצוא ל-JSON"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:28
+msgid "Export to CSV"
+msgstr "יצוא ל- CSV"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:35
+msgid "JSON Importer"
+msgstr "היבואן של JSON"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:37
+msgid "Import the rules from a .json file."
+msgstr "יבא את הכללים מקובץ. json."
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:60
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:87
+msgid "Import"
+msgstr "ייבוא"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:67
+msgid "CSV Importer"
+msgstr "CSV יבואן"
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:69
+msgid "Import the rules from a .csv file."
+msgstr "יבא את הכללים מקובץ csv."
+
+#: admin/view/tabs/selected-tab-content/elex-import_export-tab.php:99
+msgid "Restore Tabs"
+msgstr "שחזר כרטיסיות"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:107
+msgid "Rule applicable on"
+msgstr "כלל ישים ב"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:112
+msgid ""
+"<u>Selected products:</u>The rule would be applied to the selected products "
+"individually.</br><u>Selected category:</u>This is different from the "
+"\"Category Rule\". In this case, the rule would be individually applied to "
+"all the products in the category.</br><u>Products in Cart:</u>Rule will be "
+"applied individually on each product in cart"
+msgstr ""
+"<u> מוצרים נבחרים: </u> הכלל יוחל על המוצרים שנבחרו בנפרד. </br> <u> "
+"הקטגוריה הנבחרת: </u> זה שונה מכלל הקטגוריות. במקרה זה, הכלל יוחל בנפרד על "
+"כל המוצרים בקטגוריה. </br> <u> מוצרים בסל: </u> הכלל יחול בנפרד על כל מוצר "
+"בעגלה"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:118
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:133
+msgid "Products"
+msgstr "מוצרים"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:129
+msgid "The rule would be applied to the selected products individually."
+msgstr "הכלל יוחל על המוצרים שנבחרו בנפרד."
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:145
+msgid "Rule to be applied on which products"
+msgstr "יש להחיל את הכלל על המוצרים ש"
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:161
+msgid ""
+"This is different from the \"Category Rule\". In this case, the rule would "
+"be individually applied to all the products in the category."
+msgstr ""
+"זה שונה מכלל הקטגוריות. במקרה זה, הכלל יוחל בנפרד על כל המוצרים בקטגוריה."
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:171
+msgid "The rules can be applied based on \"Quantity/Price/Weight\""
+msgstr "ניתן להחיל את הכללים על בסיס \"כמות/מחיר/משקל\""
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:224
+msgid ""
+"This value is used to set up a limit for the discount. This is usually left "
+"blank if you do not want to limit the discount."
+msgstr ""
+"ערך זה משמש להגדרת מגבלה עבור ההנחה. בדרך כלל, הדבר נשאר ריק אם אינך מעוניין "
+"להגביל את ההנחה."
+
+#: admin/view/tabs/selected-tab-content/elex-product-rule-tab.php:244
+msgid ""
+"This rule will be executed if the total quantity of the product is a "
+"multiple of the min/max quantity set in the \"Rule\" section. Note that for "
+"this to work the min and the max quantity has to be equal."
+msgstr ""
+"כלל זה יבוצע אם הכמות הכוללת של המוצר היא כפולה של כמות מינימום/מקסימום "
+"שנקבעה בסעיף \"כלל\". שים לב לכך שכדי שפעולה זו תפעל מזערי והכמות המרבית "
+"צריכה להיות שווה."
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:162
+msgid "Execution Order"
+msgstr "הזמנת ביצוע"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:300
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:334
+msgid "Before Product"
+msgstr "לפני המוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:301
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:335
+msgid "After Product"
+msgstr "לאחר המוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:302
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:336
+msgid "Before Product Summary"
+msgstr "לפני תקציר המוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:303
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:337
+msgid "In Product Summary"
+msgstr "בתקציר המוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:304
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:338
+msgid "After Product Summary"
+msgstr "לאחר סיכום מוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:305
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:339
+msgid "Before Add To Cart Button"
+msgstr "לפני כפתור הוסף לסל"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:306
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:340
+msgid "After Add To Cart Button"
+msgstr "לאחר לחצן ' הוסף לסל '"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:307
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:341
+msgid "Before Add To Cart Form"
+msgstr "לפני הוסף לטופס עגלת הקניות"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:308
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:342
+msgid "After Add To Cart Form"
+msgstr "לאחר הוסף לטופס עגלת הקניות"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:309
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:343
+msgid "Product Thumbnails"
+msgstr "תמונות ממוזערות של המוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:310
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:344
+msgid "Product Meta Start"
+msgstr "הפעלת מטא-מוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:311
+#: admin/view/tabs/selected-tab-content/elex-settings_page-tab.php:345
+msgid "Product Meta End"
+msgstr "מטא-קצה מוצר"
+
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:96
+msgid "Product tags"
+msgstr "תגיות מוצרים"
+
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:97
+msgid "Select tags"
+msgstr "בחר תגים"
+
+#: admin/view/tabs/selected-tab-content/elex-tag-rule-tab.php:108
+msgid "Select the tag for which the rule would be applied."
+msgstr "בחר בתג שעבורו הכלל יוחל."
+
+#: elex-woocommerce-dynamic-pricing-and-discounts.php:42
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete Dynamic Pricing and "
+"Discounts for WooCommerce Basic Version and then try again"
+msgstr ""
+"אופס! ניסית להתקין את הגירסה הפרמיה ללא הפסקת ומחיקת הגירסה הבסיסית. אנא בטל "
+"את הפעלתו ומחק תמחור דינאמי והנחות עבור גירסה בסיסית של WooCommerce ולאחר "
+"מכן נסה שוב"
+
+#: elex-woocommerce-dynamic-pricing-and-discounts.php:127
+msgid "Documentation"
+msgstr "תיעוד"
+
+#: elex-woocommerce-dynamic-pricing-and-discounts.php:128
+msgid "Support"
+msgstr "תמיכה"
+
+#: includes/elex-common-functions.php:297
+#, php-format
+msgctxt "Price range: from-to"
+msgid "%1$s &ndash; %2$s"
+msgstr "%1$s &ndash; %2$s"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:367
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"פג תוקפו של מפתח הרשיון עבור %s. באפשרותך להפעיל מחדש או לרכוש מפתח רשיון "
+"מהחשבון שלך < a href = \" %s\" היעד = \"_ blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:378
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"המנוי עבור %s נמצא בהמתנה. באפשרותך להפעיל מחדש את המנוי מהחשבון שלך < a "
+"href = \" %s\" היעד = \"_ blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:389
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+"המנוי עבור %s בוטל. באפשרותך לחדש את המנוי מהחשבון שלך < a href = \" %s\" "
+"היעד = \"_ blank\" > לוח המחוונים </a>. מפתח רישיון חדש תישלח אליך לאחר "
+"ההזמנה שלך הושלמה."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:400
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"תוקף המנוי עבור %s פג. באפשרותך להפעיל מחדש את המנוי מהחשבון שלך < a href = "
+"\" %s\" היעד = \"_ blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:411
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"המנוי עבור %s הושהה. באפשרותך להפעיל מחדש את המנוי מהחשבון שלך < a href = \" "
+"%s\" היעד = \"_ blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:422
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"המנוי עבור %s עדיין ממתין. באפשרותך לבדוק את מצב המנוי מהחשבון שלך < a href "
+"= \" %s\" היעד = \"_ blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:433
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"המנוי עבור %s הוצב בפח האשפה והוא יימחק בקרוב. באפשרותך לרכוש מנוי חדש "
+"מהחשבון שלך < a href = \" %s\" היעד = \"_ blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:444
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"לא היתה אפשרות למצוא מנוי עבור %s. באפשרותך לרכוש מנוי מהחשבון שלך < a href "
+"= \" %s\" היעד = \"_ blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:455
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"לא היתה אפשרות למצוא מפתח רשיון עבור %s. ייתכן ששכחת להזין מפתח רשיון בעת "
+"הגדרת %s, או שהמפתח בוטל בחשבונך. באפשרותך להפעיל מחדש את מפתח הרשיון ב-"
+"plugin שלך < a href = \" %s\" היעד = \"_ blank\" > הגדרות הדף </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:466
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"הרשאת ההורדה עבור %s בוטלה אולי עקב מפתח רשיון או תפוגת מנוי. באפשרותך "
+"להפעיל מחדש או לרכוש מפתח רשיון מהחשבון שלך < a href = \" %s\" היעד = \"_ "
+"blank\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:477
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+"%s לא הופעל. עבור אל ה-plugin < a href = \" %s\" היעד = \"_ blank\" > הגדרות "
+"הדף </a> ולהזין את מפתח הרישיון ואת הדוא ל רישיון כדי להפעיל את %s."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:488
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"שינית את המנוי עבור %s, כך שיהיה עליך להזין את מפתח רשיון ה-API החדש שלך בדף "
+"ההגדרות. מפתח הרישיון היה צריך להגיע לתיבת הדואר האלקטרוני שלך, אם לא אתה "
+"יכול לקבל את זה על ידי כניסה לחשבון שלך < a href = \" %s\" היעד = \"_ blank"
+"\" > לוח המחוונים </a>."
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:181
+msgid "ELEX Plugins You May Be Interested In"
+msgstr "לוקס תוספים ייתכן שאתה מעוניין"
+
+#: jquery-ui/%00.desktop:3
+msgid "unknown"
+msgstr "לא ידוע"
+
+#: jquery-ui/%00.desktop:4
+#, fuzzy
+msgid "%00"
+msgstr "% 00"
+
+#: public/elex-dynamic-pricing-plugin-public.php:164
+msgid "Discount Adjustment"
+msgstr "התאמת הנחה"
+
+#: public/elex-new-calculation-handler.php:388
+#, php-format
+msgctxt "Price range: from-to"
+msgid "%1$s&ndash;%2$s"
+msgstr "%1$s&ndash;%2$s"
+
+#: public/elex-new-calculation-handler.php:392
+msgid "Free!"
+msgstr "חינם!"
+
+#: public/elex-single-product-offer-table.php:27
+msgid "Offers"
+msgstr "הצעות"
+
+#: public/elex-single-product-pricing-table.php:38
+msgid "Bulk Product Offers"
+msgstr "הצעות למוצרים בצובר"
+
+#: public/elex-single-product-pricing-table.php:41
+msgid "Min Buy"
+msgstr "מין לקנות"
+
+#: public/elex-single-product-pricing-table.php:41
+msgid "Max Buy"
+msgstr "מקס לקנות"
+
+#: public/elex-single-product-pricing-table.php:41
+msgid "Offer"
+msgstr "הצעה"
+
+#: public/elex-single-product-pricing-table.php:48
+#, fuzzy
+msgid "nos"
+msgstr "nos"
+
+#: public/elex-single-product-pricing-table.php:87
+msgid " "
+msgstr " "
+
+#: public/elex-single-product-pricing-table.php:94
+msgid "Fixed Price"
+msgstr "מחיר קבוע"
+
+#. Plugin Name of the plugin/theme
+msgid "ELEX Dynamic&nbsp;Pricing and Discounts for WooCommerce"
+msgstr "ELEX דינמי &nbsp; תמחור והנחות עבור WooCommerce"
+
+#. Plugin URI of the plugin/theme
+#, fuzzy
+msgid ""
+"https://elextensions.com/plugin/dynamic-pricing-and-discounts-plugin-for-"
+"woocommerce/"
+msgstr ""
+"https://elextensions.com/plugin/dynamic-pricing-and-discounts-plugin-for-"
+"woocommerce/"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin helps you to set discounts and pricing dynamically based on "
+"minimum quantity,weight,price and allow you to set maximum allowed discounts "
+"on every rule."
+msgstr ""
+"תוסף זה מסייע לך להגדיר הנחות ותמחור באופן דינמי על בסיס כמות מינימלית, "
+"משקל, מחיר ולאפשר לך להגדיר הנחות מותרות מקסימלית בכל כלל."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "ELEX"
+msgstr "מיכל אלמקס"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://elextensions.com"
+msgstr "https://elextensions.com"

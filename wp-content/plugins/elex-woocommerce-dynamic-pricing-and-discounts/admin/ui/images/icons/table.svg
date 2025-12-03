@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="table" d="M9,3H5A2,2,0,0,0,3,5V9M9,3H19a2,2,0,0,1,2,2V9M9,3V21m0,0H19a2,2,0,0,0,2-2V9M9,21H5a2,2,0,0,1-2-2V9M3,9H21" transform="translate(-2 -2)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cb/carousel-v2",
+  "version": "1.0.0",
+  "title": "Carousel Slider v2",
+  "category": "design",
+  "description": "Display a carousel with any blocks in the slides.",
+  "attributes": {
+    "slides": {
+      "type": "number"
+    },
+    "slidesPerView": {
+      "type": "number",
+      "default": 3
+    },
+    "scrollGroup": {
+      "type": "boolean",
+      "default": false
+    },
+    "slidesPerGroup": {
+      "type": "number",
+      "default": 1
+    },
+    "spaceBetween": {
+      "type": "number",
+      "default": 15
+    },
+    "speed": {
+      "type": "number",
+      "default": 300
+    },
+    "slidePadding": {
+      "type": "boolean"
+    },
+    "navigation": {
+      "type": "boolean",
+      "default": true
+    },
+    "pagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 3000
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "rtl": {
+      "type": "boolean"
+    },
+    "breakpoints": {
+      "type": "array",
+      "default": [
+        {
+          "width": 768,
+          "slidesPerView": 1,
+          "slidesPerGroup": 1
+        }
+      ]
+    },
+    "navigationSize": {
+      "type": "number",
+      "default": 22
+    },
+    "navigationColor": {
+      "type": "string",
+      "default": "#000"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "anchor": true
+  },
+  "textdomain": "carousel-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-index.css"
+}
