@@ -5,16 +5,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class MNS_Games_Public {
 
-    /**
-     * Mensajes por juego
-     */
     public static $blackjack_message = '';
     public static $roulette_message  = '';
     public static $russian_message   = '';
 
-    /**
-     * Manejar acciones de Blackjack (POST)
-     */
     public static function handle_blackjack_actions() {
         if ( ! isset( $_POST['mns_bj_action'] ) ) {
             return;
@@ -37,7 +31,6 @@ class MNS_Games_Public {
         $action  = sanitize_text_field( wp_unslash( $_POST['mns_bj_action'] ) );
         $state   = MNS_Games_Helper::get_blackjack_state( $user_id );
 
-        // Iniciar nueva partida
         if ( $action === 'start' ) {
             $bet = isset( $_POST['mns_bj_bet'] ) ? intval( $_POST['mns_bj_bet'] ) : 0;
 
@@ -52,14 +45,12 @@ class MNS_Games_Public {
                 return;
             }
 
-            // Descontar apuesta inicial
             $ok = MNS_Tokens_Helper::subtract_tokens( $user_id, $bet, 'blackjack_bet' );
             if ( ! $ok ) {
                 self::$blackjack_message = __( 'No ha sido posible registrar la apuesta.', 'casino-games-mns' );
                 return;
             }
 
-            // Preparar mazo y repartir
             $deck = MNS_Games_Helper::generate_deck();
 
             $player_hand = array(
@@ -85,7 +76,6 @@ class MNS_Games_Public {
             return;
         }
 
-        // Si no hay estado, no hay partida en curso
         if ( empty( $state ) || ! isset( $state['turn'] ) || $state['turn'] === 'finished' ) {
             self::$blackjack_message = __( 'No hay una partida de Blackjack en curso.', 'casino-games-mns' );
             return;
@@ -102,7 +92,6 @@ class MNS_Games_Public {
                 $player_value           = MNS_Games_Helper::calculate_blackjack_hand_value( $state['player_hand'] );
 
                 if ( $player_value['is_bust'] ) {
-                    // Pierde directamente
                     $state['turn'] = 'finished';
                     MNS_Games_Helper::set_blackjack_state( $state, $user_id );
                     self::$blackjack_message = __( 'Te has pasado. Has perdido la mano.', 'casino-games-mns' );
@@ -117,10 +106,9 @@ class MNS_Games_Public {
                 if ( $state['turn'] !== 'player' ) {
                     break;
                 }
-                // Turno de la banca
+
                 $state['turn'] = 'dealer';
 
-                // Jugar banca hasta soft 17
                 $dealer_value = MNS_Games_Helper::calculate_blackjack_hand_value( $state['dealer_hand'] );
                 while ( $dealer_value['value'] < 17 || ( $dealer_value['value'] === 17 && $dealer_value['is_soft'] ) ) {
                     $state['dealer_hand'][] = MNS_Games_Helper::draw_card_from_deck( $deck );
@@ -145,7 +133,6 @@ class MNS_Games_Public {
                         MNS_Tokens_Helper::add_tokens( $user_id, $bet, 'blackjack_push' );
                         self::$blackjack_message = __( 'Empate. Recuperas tu apuesta.', 'casino-games-mns' );
                     } else {
-                        // lose: nada que devolver, ya se pagó la apuesta al inicio.
                         self::$blackjack_message = __( 'Has perdido la mano.', 'casino-games-mns' );
                     }
                 }
@@ -168,7 +155,6 @@ class MNS_Games_Public {
                     break;
                 }
 
-                // Cobrar segunda parte de la apuesta
                 $ok = MNS_Tokens_Helper::subtract_tokens( $user_id, $bet, 'blackjack_bet' );
                 if ( ! $ok ) {
                     self::$blackjack_message = __( 'No ha sido posible doblar la apuesta.', 'casino-games-mns' );
@@ -177,7 +163,6 @@ class MNS_Games_Public {
 
                 $state['bet'] = $bet * 2;
 
-                // Roba una carta y pasa a banca
                 $state['player_hand'][] = MNS_Games_Helper::draw_card_from_deck( $deck );
                 $player_value           = MNS_Games_Helper::calculate_blackjack_hand_value( $state['player_hand'] );
 
@@ -189,7 +174,6 @@ class MNS_Games_Public {
                     return;
                 }
 
-                // Banca
                 $state['turn'] = 'dealer';
                 $dealer_value  = MNS_Games_Helper::calculate_blackjack_hand_value( $state['dealer_hand'] );
 
@@ -224,16 +208,11 @@ class MNS_Games_Public {
                 break;
 
             case 'split':
-                // Implementación básica: marcar como split permitido, pero no se desarrolla lógica completa de mano doble.
-                // Se deja preparado para extender.
                 self::$blackjack_message = __( 'La opción de Split está marcada pero su lógica avanzada está pendiente de ampliar.', 'casino-games-mns' );
                 break;
         }
     }
 
-    /**
-     * Shortcode Blackjack
-     */
     public static function shortcode_blackjack( $atts ) {
         if ( ! is_user_logged_in() ) {
             return '<div class="mns-game mns-game-blackjack"><p>' .
@@ -287,19 +266,57 @@ class MNS_Games_Public {
                             <?php
                             if ( ! empty( $state['player_hand'] ) && is_array( $state['player_hand'] ) ) {
                                 foreach ( $state['player_hand'] as $card ) {
-                                    echo '<span class="bj-card">' . esc_html( $card ) . '</span>';
+                                    $rank = preg_replace( '/[HDCS]$/', '', $card );
+                                    $suit = substr( $card, -1 );
+                                    $unicode_suit = array(
+                                        'S' => '♠',
+                                        'H' => '♥',
+                                        'D' => '♦',
+                                        'C' => '♣',
+                                    );
+                                    $unicode = isset( $unicode_suit[ $suit ] ) ? $unicode_suit[ $suit ] : '';
+                                    $is_red  = in_array( $suit, array( 'H', 'D' ), true );
+                                    echo '<span class="bj-card ' . ( $is_red ? 'red' : '' ) . '" data-rank="' . esc_attr( $rank ) . '" data-suit="' . esc_attr( $unicode ) . '"></span>';
                                 }
                             }
                             ?>
                         </div>
                     </div>
+
                     <div class="bj-dealer-hand">
                         <h4><?php esc_html_e( 'Banca', 'casino-games-mns' ); ?></h4>
                         <div class="bj-cards">
                             <?php
                             if ( ! empty( $state['dealer_hand'] ) && is_array( $state['dealer_hand'] ) ) {
-                                foreach ( $state['dealer_hand'] as $card ) {
-                                    echo '<span class="bj-card">' . esc_html( $card ) . '</span>';
+                                $turn = isset( $state['turn'] ) ? $state['turn'] : 'finished';
+
+                                $first = $state['dealer_hand'][0];
+                                $rank1 = preg_replace( '/[HDCS]$/', '', $first );
+                                $suit1 = substr( $first, -1 );
+                                $unicode_map = array(
+                                    'S' => '♠',
+                                    'H' => '♥',
+                                    'D' => '♦',
+                                    'C' => '♣',
+                                );
+                                $unicode1 = isset( $unicode_map[ $suit1 ] ) ? $unicode_map[ $suit1 ] : '';
+                                $is_red1  = in_array( $suit1, array( 'H', 'D' ), true );
+
+                                echo '<span class="bj-card ' . ( $is_red1 ? 'red' : '' ) . '" data-rank="' . esc_attr( $rank1 ) . '" data-suit="' . esc_attr( $unicode1 ) . '"></span>';
+
+                                if ( $turn === 'player' && count( $state['dealer_hand'] ) > 1 ) {
+                                    echo '<span class="bj-card back"></span>';
+                                }
+
+                                if ( $turn !== 'player' ) {
+                                    for ( $i = 1; $i < count( $state['dealer_hand'] ); $i++ ) {
+                                        $card   = $state['dealer_hand'][ $i ];
+                                        $rank   = preg_replace( '/[HDCS]$/', '', $card );
+                                        $suit   = substr( $card, -1 );
+                                        $unicode = isset( $unicode_map[ $suit ] ) ? $unicode_map[ $suit ] : '';
+                                        $is_red = in_array( $suit, array( 'H', 'D' ), true );
+                                        echo '<span class="bj-card ' . ( $is_red ? 'red' : '' ) . '" data-rank="' . esc_attr( $rank ) . '" data-suit="' . esc_attr( $unicode ) . '"></span>';
+                                    }
                                 }
                             }
                             ?>
@@ -313,9 +330,9 @@ class MNS_Games_Public {
                     </button>
 
                     <?php
-                    $turn       = isset( $state['turn'] ) ? $state['turn'] : 'finished';
-                    $is_active  = ( $turn === 'player' );
-                    $disabled   = $is_active ? '' : ' bj-action--disabled';
+                    $turn      = isset( $state['turn'] ) ? $state['turn'] : 'finished';
+                    $is_active = ( 'player' === $turn );
+                    $disabled  = $is_active ? '' : ' bj-action--disabled';
                     ?>
 
                     <button type="submit" name="mns_bj_action" value="hit" class="bj-action bj-action-hit<?php echo esc_attr( $disabled ); ?>" <?php echo $is_active ? '' : 'disabled'; ?>>
@@ -327,7 +344,6 @@ class MNS_Games_Public {
                     </button>
 
                     <?php
-                    // Double: solo si hay estado y el turno es del jugador
                     $can_double   = $is_active && ! empty( $state );
                     $double_class = $can_double ? '' : ' bj-action--disabled';
                     ?>
@@ -336,7 +352,6 @@ class MNS_Games_Public {
                     </button>
 
                     <?php
-                    // Split: botón visual, lógica interna aún básica
                     $can_split = false;
                     if ( ! empty( $state['player_hand'] ) && count( $state['player_hand'] ) === 2 ) {
                         $c1 = preg_replace( '/[HDCS]$/', '', $state['player_hand'][0] );
@@ -358,7 +373,7 @@ class MNS_Games_Public {
                     var form  = document.querySelector('.mns-blackjack-form');
                     if (!form) return;
 
-                    var input = form.querySelector('.bj-bet-input');
+                    var input   = form.querySelector('.bj-bet-input');
                     var buttons = form.querySelectorAll('.bj-bet-quick');
                     var balance = <?php echo intval( $tokens ); ?>;
 
@@ -380,9 +395,6 @@ class MNS_Games_Public {
         return ob_get_clean();
     }
 
-    /**
-     * Manejar acciones de Ruleta (POST)
-     */
     public static function handle_roulette_actions() {
         if ( ! isset( $_POST['mns_rl_action'] ) ) {
             return;
@@ -408,7 +420,6 @@ class MNS_Games_Public {
             return;
         }
 
-        // Recoger apuestas desde campos ocultos (generados por JS)
         $bets_raw = isset( $_POST['mns_rl_bets'] ) ? wp_unslash( $_POST['mns_rl_bets'] ) : '';
         $bets     = array();
 
@@ -424,7 +435,6 @@ class MNS_Games_Public {
             return;
         }
 
-        // Calcular total apostado
         $total_bet = 0;
         foreach ( $bets as $bet ) {
             $amount = isset( $bet['amount'] ) ? intval( $bet['amount'] ) : 0;
@@ -444,14 +454,12 @@ class MNS_Games_Public {
             return;
         }
 
-        // Cobrar total apostado
         $ok = MNS_Tokens_Helper::subtract_tokens( $user_id, $total_bet, 'roulette_bet' );
         if ( ! $ok ) {
             self::$roulette_message = __( 'No se ha podido registrar la apuesta.', 'casino-games-mns' );
             return;
         }
 
-        // Número ganador enviado desde el giro visual (JS)
         $number = isset( $_POST['mns_rl_winning'] ) ? intval( $_POST['mns_rl_winning'] ) : -1;
 
         if ( $number < 0 || $number > 36 ) {
@@ -459,7 +467,6 @@ class MNS_Games_Public {
             return;
         }
 
-        // Calcular ganancias
         $total_win = MNS_Games_Helper::evaluate_roulette_bets( $bets, $number );
         if ( $total_win > 0 ) {
             MNS_Tokens_Helper::add_tokens( $user_id, $total_win, 'roulette_win' );
@@ -467,7 +474,6 @@ class MNS_Games_Public {
 
         $color  = MNS_Games_Helper::get_roulette_color( $number );
         $result = sprintf(
-            /* translators: 1: number, 2: color */
             __( 'Número: %1$d (%2$s). Has apostado %3$d fichas y ganado %4$d.', 'casino-games-mns' ),
             $number,
             $color,
@@ -477,14 +483,10 @@ class MNS_Games_Public {
 
         self::$roulette_message = $result;
 
-        // Guardar en variable global para mostrar resultado
         $GLOBALS['mns_rl_last_number'] = $number;
         $GLOBALS['mns_rl_last_color']  = $color;
     }
 
-    /**
-     * Shortcode Ruleta Europea
-     */
     public static function shortcode_roulette( $atts ) {
         if ( ! is_user_logged_in() ) {
             return '<div class="mns-game mns-game-roulette"><p>' .
@@ -520,10 +522,7 @@ class MNS_Games_Public {
             <?php if ( $last_number !== null ) : ?>
                 <div class="rl-last-result">
                     <?php
-                    echo esc_html__(
-                        'Último resultado:',
-                        'casino-games-mns'
-                    ) . ' ' . intval( $last_number ) . ' (' . esc_html( $last_color ) . ')';
+                    echo esc_html__( 'Último resultado:', 'casino-games-mns' ) . ' ' . intval( $last_number ) . ' (' . esc_html( $last_color ) . ')';
                     ?>
                 </div>
             <?php endif; ?>
@@ -545,14 +544,11 @@ class MNS_Games_Public {
 
                 <div class="mns-rl-table">
                     <div class="rl-wheel">
-                        <!-- AQUÍ aplicas tú la imagen por CSS a .rl-wheel-inner -->
                         <div class="rl-wheel-inner" id="mns-roulette-wheel"></div>
                         <div class="rl-ball" id="mns-roulette-ball"></div>
                     </div>
 
                     <div class="rl-grid">
-
-                        <!-- 0 a la izquierda, en vertical -->
                         <div class="rl-row rl-row-zero">
                             <?php
                             $color_zero = MNS_Games_Helper::get_roulette_color( 0 );
@@ -562,7 +558,6 @@ class MNS_Games_Public {
                             } elseif ( $color_zero === 'black' || $color_zero === 'negro' ) {
                                 $zero_class .= ' rl-color-black';
                             } else {
-                                // Por defecto 0 verde
                                 $zero_class .= ' rl-color-green';
                             }
                             ?>
@@ -574,13 +569,12 @@ class MNS_Games_Public {
                             </button>
                         </div>
 
-                        <!-- Números 1–36 en 3 columnas x 12 filas (mesa clásica) -->
                         <div class="rl-row rl-row-numbers-horizontal">
-                            <?php for ( $col = 1; $col <= 3; $col++ ) : ?>
-                                <div class="rl-col">
+                            <?php for ( $row = 0; $row < 3; $row++ ) : ?>
+                                <div class="rl-row-numbers-row">
                                     <?php
-                                    for ( $row = 0; $row < 12; $row++ ) :
-                                        $num   = ( $row * 3 ) + $col;
+                                    for ( $col = 0; $col < 12; $col++ ) :
+                                        $num   = ( $row * 12 ) + $col + 1;
                                         $color = MNS_Games_Helper::get_roulette_color( $num );
                                         $classes = 'rl-cell-number';
 
@@ -591,7 +585,7 @@ class MNS_Games_Public {
                                         } elseif ( $color === 'green' || $color === 'verde' ) {
                                             $classes .= ' rl-color-green';
                                         }
-                                    ?>
+                                        ?>
                                         <button type="button"
                                                 class="<?php echo esc_attr( $classes ); ?>"
                                                 data-type="straight"
@@ -603,7 +597,6 @@ class MNS_Games_Public {
                             <?php endfor; ?>
                         </div>
 
-                        <!-- Apuestas externas -->
                         <div class="rl-row rl-row-external">
                             <button type="button" class="rl-cell-external rl-cell-red" data-type="color" data-value="red">
                                 <?php esc_html_e( 'Rojo', 'casino-games-mns' ); ?>
@@ -668,15 +661,14 @@ class MNS_Games_Public {
                     var form      = document.querySelector('.mns-roulette-form');
                     if (!form) return;
 
-                    var chipButtons = form.querySelectorAll('.rl-chip');
-                    var currentChip = null;
-                    var betsField   = form.querySelector('.mns-rl-bets-field');
+                    var chipButtons  = form.querySelectorAll('.rl-chip');
+                    var currentChip  = null;
+                    var betsField    = form.querySelector('.mns-rl-bets-field');
                     var winningField = form.querySelector('.mns-rl-winning-field');
-                    var betsList    = form.querySelector('.rl-bets-list');
-                    var balance     = <?php echo intval( $tokens ); ?>;
-                    var bets        = [];
+                    var betsList     = form.querySelector('.rl-bets-list');
+                    var balance      = <?php echo intval( $tokens ); ?>;
+                    var bets         = [];
 
-                    // Selección de ficha
                     chipButtons.forEach(function(btn){
                         btn.addEventListener('click', function(e){
                             e.preventDefault();
@@ -686,7 +678,6 @@ class MNS_Games_Public {
                         });
                     });
 
-                    // Click en casillas de apuesta
                     form.querySelectorAll('.rl-cell-number, .rl-cell-external').forEach(function(cell){
                         cell.addEventListener('click', function(e){
                             e.preventDefault();
@@ -697,7 +688,10 @@ class MNS_Games_Public {
                             var type  = this.getAttribute('data-type');
                             var value = this.getAttribute('data-value');
 
-                            var totalBet = bets.reduce(function(acc, b){ return acc + (parseInt(b.amount,10)||0); }, 0);
+                            var totalBet = bets.reduce(function(acc, b){
+                                return acc + (parseInt(b.amount,10) || 0);
+                            }, 0);
+
                             if (totalBet + currentChip > balance) {
                                 return;
                             }
@@ -718,11 +712,9 @@ class MNS_Games_Public {
                         });
                     });
 
-                    // Envío del formulario -> primero giramos, luego mandamos número ganador
                     form.addEventListener('submit', function(e){
                         e.preventDefault();
 
-                        // Si no hay apuestas, no hacemos nada
                         if (!bets.length) {
                             return;
                         }
@@ -736,7 +728,6 @@ class MNS_Games_Public {
                         }
 
                         if (!window.MNSRoulette || !wheelInner || !winningField) {
-                            // Fallback: si algo falla, manda sin número visual
                             form.submit();
                             return;
                         }
@@ -758,9 +749,6 @@ class MNS_Games_Public {
         return ob_get_clean();
     }
 
-    /**
-     * Manejar acciones de Ruleta Rusa
-     */
     public static function handle_russian_roulette_actions() {
         if ( ! isset( $_POST['mns_rr_action'] ) ) {
             return;
@@ -774,33 +762,98 @@ class MNS_Games_Public {
             return;
         }
 
-        $user_id = get_current_user_id();
-
         if ( ! class_exists( 'MNS_Tokens_Helper' ) ) {
             self::$russian_message = __( 'Sistema de fichas no disponible.', 'casino-games-mns' );
             return;
         }
 
-        $result = MNS_Games_Helper::play_russian_roulette( $user_id );
+        $user_id = get_current_user_id();
 
-        if ( $result['result'] === 'lose' ) {
-            // Pantalla de muerte total
-            wp_die(
-                '<div class="mns-russian-roulette-result mns-russian-roulette-lose">' .
-                '<h2>' . esc_html__( 'HAS PERDIDO', 'casino-games-mns' ) . '</h2>' .
-                '<p>' . esc_html__( 'Tu cuenta ha sido eliminada.', 'casino-games-mns' ) . '</p>' .
-                '</div>',
-                esc_html__( 'Ruleta rusa', 'casino-games-mns' ),
-                array( 'response' => 200 )
-            );
+        if ( method_exists( 'MNS_Games_Helper', 'is_admin_protected' ) && MNS_Games_Helper::is_admin_protected( $user_id ) ) {
+            self::$russian_message = __( 'Los administradores no pueden jugar a la ruleta rusa.', 'casino-games-mns' );
+            return;
         }
 
-        self::$russian_message = ! empty( $result['message'] ) ? $result['message'] : '';
+        $action = sanitize_text_field( wp_unslash( $_POST['mns_rr_action'] ) );
+
+        if ( $action === 'start_game' ) {
+            $choice = isset( $_POST['choice'] ) ? sanitize_text_field( wp_unslash( $_POST['choice'] ) ) : '';
+            if ( $choice !== 'heads' && $choice !== 'tails' ) {
+                self::$russian_message = __( 'Debes elegir cara o cruz.', 'casino-games-mns' );
+                return;
+            }
+
+            $coin_result = ( wp_rand( 0, 1 ) === 0 ) ? 'heads' : 'tails';
+            $starts      = ( $choice === $coin_result ) ? 'player' : 'paco';
+
+            $start = MNS_Games_Helper::start_rr_game( $user_id, $starts );
+            if ( ! empty( $start['error'] ) ) {
+                self::$russian_message = isset( $start['message'] ) ? $start['message'] : __( 'No se ha podido iniciar la partida.', 'casino-games-mns' );
+                return;
+            }
+
+            $txt_choice = ( $choice === 'heads' ) ? __( 'Cara', 'casino-games-mns' ) : __( 'Cruz', 'casino-games-mns' );
+            $txt_result = ( $coin_result === 'heads' ) ? __( 'Cara', 'casino-games-mns' ) : __( 'Cruz', 'casino-games-mns' );
+
+            if ( $starts === 'player' ) {
+                self::$russian_message = sprintf(
+                    __( 'Has elegido %1$s y ha salido %2$s. Empiezas tú. %3$s', 'casino-games-mns' ),
+                    $txt_choice,
+                    $txt_result,
+                    isset( $start['message'] ) ? $start['message'] : ''
+                );
+            } else {
+                self::$russian_message = sprintf(
+                    __( 'Has elegido %1$s y ha salido %2$s. Empieza Paco %3$d. %4$s', 'casino-games-mns' ),
+                    $txt_choice,
+                    $txt_result,
+                    intval( MNS_Games_Helper::get_paco_level() ),
+                    isset( $start['message'] ) ? $start['message'] : ''
+                );
+            }
+
+            $GLOBALS['mns_rr_last_result'] = array(
+                'outcome'      => 'start',
+                'coin_choice'  => $choice,
+                'coin_result'  => $coin_result,
+                'turn'         => $starts,
+            );
+
+            return;
+        }
+
+        if ( $action === 'player_shoot' || $action === 'paco_shoot' ) {
+            $shooter = ( $action === 'player_shoot' ) ? 'player' : 'paco';
+
+            $result = MNS_Games_Helper::resolve_rr_shot( $user_id, $shooter );
+
+            if ( isset( $result['error'] ) && $result['error'] ) {
+                self::$russian_message = isset( $result['message'] ) ? $result['message'] : __( 'Ha ocurrido un error en la partida.', 'casino-games-mns' );
+                return;
+            }
+
+            self::$russian_message = isset( $result['message'] ) ? $result['message'] : '';
+
+            $outcome = array(
+                'outcome' => '',
+            );
+
+            if ( isset( $result['fatal'] ) && $result['fatal'] ) {
+                if ( isset( $result['dead'] ) && $result['dead'] === 'player' ) {
+                    $outcome['outcome'] = 'player_dead';
+                } elseif ( isset( $result['dead'] ) && $result['dead'] === 'paco' ) {
+                    $outcome['outcome'] = 'paco_dead';
+                }
+            } else {
+                $outcome['outcome']    = 'safe';
+                $outcome['next_turn']  = isset( $result['next_turn'] ) ? $result['next_turn'] : '';
+            }
+
+            $GLOBALS['mns_rr_last_result'] = $outcome;
+            return;
+        }
     }
 
-    /**
-     * Shortcode Ruleta Rusa
-     */
     public static function shortcode_russian_roulette( $atts ) {
         if ( ! is_user_logged_in() ) {
             return '<div class="mns-game mns-game-russian-roulette"><p>' .
@@ -810,7 +863,7 @@ class MNS_Games_Public {
 
         $user_id = get_current_user_id();
 
-        if ( MNS_Games_Helper::is_admin_protected( $user_id ) ) {
+        if ( method_exists( 'MNS_Games_Helper', 'is_admin_protected' ) && MNS_Games_Helper::is_admin_protected( $user_id ) ) {
             return '<div class="mns-game mns-game-russian-roulette"><p>' .
                 esc_html__( 'Los administradores no pueden jugar a la ruleta rusa.', 'casino-games-mns' ) .
                 '</p></div>';
@@ -822,34 +875,191 @@ class MNS_Games_Public {
                 '</p></div>';
         }
 
-        $tokens = MNS_Tokens_Helper::get_tokens( $user_id );
+        $tokens    = MNS_Tokens_Helper::get_tokens( $user_id );
+        $rr_state  = MNS_Games_Helper::get_rr_state( $user_id );
+        $rr_turn   = isset( $rr_state['turn'] ) ? $rr_state['turn'] : '';
+        $rr_finished = ! empty( $rr_state['finished'] );
+        $last_result = isset( $GLOBALS['mns_rr_last_result'] ) && is_array( $GLOBALS['mns_rr_last_result'] ) ? $GLOBALS['mns_rr_last_result'] : array();
 
         ob_start();
         ?>
-        <div class="mns-game mns-game-russian-roulette">
-            <div class="mns-game-balance">
-                <?php echo esc_html__( 'Tus fichas:', 'casino-games-mns' ) . ' ' . intval( $tokens ); ?>
-            </div>
+<div class="mns-game mns-game-russian-roulette">
 
-            <?php if ( ! empty( self::$russian_message ) ) : ?>
-                <div class="mns-game-messages">
-                    <?php echo esc_html( self::$russian_message ); ?>
-                </div>
-            <?php endif; ?>
+    <div class="mns-game-balance">
+        Tus fichas: <?php echo intval( $tokens ); ?>
+    </div>
 
-            <form method="post" class="mns-russian-roulette-form">
-                <?php wp_nonce_field( 'mns_russian_roulette_action', 'mns_rr_nonce' ); ?>
-                <input type="hidden" name="mns_rr_action" value="play">
-
-                <p class="mns-russian-warning">
-                    <?php esc_html_e( 'Si pierdes, tu cuenta será eliminada. Si ganas, tus fichas se duplicarán.', 'casino-games-mns' ); ?>
-                </p>
-
-                <button type="submit" class="rr-play-button">
-                    <?php esc_html_e( 'Jugar a la Ruleta Rusa (ALL IN)', 'casino-games-mns' ); ?>
-                </button>
-            </form>
+    <?php if ( ! empty( self::$russian_message ) ) : ?>
+        <div class="mns-game-messages">
+            <?php echo esc_html( self::$russian_message ); ?>
         </div>
+    <?php endif; ?>
+
+    <div class="rr-paco-name">
+        Paco <?php echo intval( MNS_Games_Helper::get_paco_level() ); ?>
+    </div>
+
+    <div class="rr-choice-box">
+        <button type="button" class="rr-choice-btn" data-choice="heads">Cara</button>
+        <button type="button" class="rr-choice-btn" data-choice="tails">Cruz</button>
+    </div>
+
+    <div class="rr-coin" id="rr-coin">
+        <div class="rr-coin-inner">
+            <div class="rr-coin-face-heads">Cara</div>
+            <div class="rr-coin-face-tails">Cruz</div>
+        </div>
+    </div>
+
+    <div class="rr-turn-indicator" id="rr-turn-indicator"></div>
+
+    <div class="rr-chamber" id="rr-chamber"></div>
+
+    <div class="rr-countdown" id="rr-countdown"></div>
+
+    <div class="rr-bang" id="rr-bang">BANG</div>
+    <div class="rr-empty" id="rr-empty">CLICK</div>
+
+    <div class="rr-buttons">
+        <button type="button" class="rr-btn rr-btn-red" id="rr-btn-shoot-me" disabled>Dispararme</button>
+        <button type="button" class="rr-btn rr-btn-green" id="rr-btn-shoot-paco" disabled>Disparar a Paco</button>
+    </div>
+
+    <form method="post" id="rr-form">
+        <?php wp_nonce_field( 'mns_russian_roulette_action', 'mns_rr_nonce' ); ?>
+        <input type="hidden" name="mns_rr_action" value="">
+        <input type="hidden" name="choice" id="rr-choice-field" value="">
+        <input type="hidden" name="turn_action" id="rr-turn-action" value="">
+    </form>
+
+</div>
+
+<script>
+(function(){
+    var containers = document.querySelectorAll('.mns-game-russian-roulette');
+    if (!containers.length) return;
+    var container = containers[containers.length - 1];
+
+    var state = <?php echo wp_json_encode( array(
+        'turn'        => $rr_turn,
+        'finished'    => $rr_finished,
+        'last_result' => $last_result,
+    ) ); ?>;
+
+    var form         = container.querySelector('#rr-form');
+    var actionField  = form ? form.querySelector('input[name="mns_rr_action"]') : null;
+    var choiceField  = form ? form.querySelector('#rr-choice-field') : null;
+    var turnField    = form ? form.querySelector('#rr-turn-action') : null;
+    var choiceBtns   = container.querySelectorAll('.rr-choice-btn');
+    var shootMeBtn   = container.querySelector('#rr-btn-shoot-me');
+    var shootPacoBtn = container.querySelector('#rr-btn-shoot-paco');
+    var turnIndicator= container.querySelector('#rr-turn-indicator');
+    var chamberEl    = container.querySelector('#rr-chamber');
+    var countdownEl  = container.querySelector('#rr-countdown');
+    var bangEl       = container.querySelector('#rr-bang');
+    var emptyEl      = container.querySelector('#rr-empty');
+    var coinEl       = container.querySelector('#rr-coin');
+
+    if (turnIndicator) {
+        if (state.turn === 'player') {
+            turnIndicator.textContent = 'Tu turno';
+        } else if (state.turn === 'paco') {
+            turnIndicator.textContent = 'Turno de Paco';
+        } else {
+            turnIndicator.textContent = 'Selecciona Cara o Cruz para empezar';
+        }
+    }
+
+    if (shootMeBtn && shootPacoBtn) {
+        shootMeBtn.disabled   = (state.turn !== 'player') || state.finished;
+        shootPacoBtn.disabled = (state.turn !== 'paco') || state.finished;
+    }
+
+    choiceBtns.forEach(function(btn){
+        btn.addEventListener('click', function(e){
+            e.preventDefault();
+            choiceBtns.forEach(function(b){ b.classList.remove('rr-choice-btn-active'); });
+            this.classList.add('rr-choice-btn-active');
+            var choice = this.getAttribute('data-choice');
+            if (choiceField) choiceField.value = choice;
+
+            if (window.MNSRussianRoulette && typeof window.MNSRussianRoulette.flipCoin === 'function' && coinEl) {
+                window.MNSRussianRoulette.flipCoin({
+                    element: coinEl,
+                    choice: choice,
+                    callback: function(){
+                        if (actionField) actionField.value = 'start_game';
+                        if (form) form.submit();
+                    }
+                });
+            } else {
+                if (actionField) actionField.value = 'start_game';
+                if (form) form.submit();
+            }
+        });
+    });
+
+    if (shootMeBtn) {
+        shootMeBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            if (!form || !actionField) return;
+            actionField.value = 'player_shoot';
+            if (turnField) turnField.value = 'player';
+            if (form) form.submit();
+        });
+    }
+
+    if (shootPacoBtn) {
+        shootPacoBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            if (!form || !actionField) return;
+            actionField.value = 'paco_shoot';
+            if (turnField) turnField.value = 'paco';
+            if (form) form.submit();
+        });
+    }
+
+    if (state.last_result && state.last_result.outcome) {
+        var outcome = state.last_result.outcome;
+
+        var showResult = function(){
+            if (outcome === 'player_dead' || outcome === 'paco_dead') {
+                if (bangEl) {
+                    bangEl.classList.add('rr-bang-show');
+                    setTimeout(function(){
+                        bangEl.classList.remove('rr-bang-show');
+                    },1500);
+                }
+            } else if (outcome === 'safe') {
+                if (emptyEl) {
+                    emptyEl.classList.add('rr-empty-show');
+                    setTimeout(function(){
+                        emptyEl.classList.remove('rr-empty-show');
+                    },1000);
+                }
+            }
+        };
+
+        if (window.MNSRussianRoulette &&
+            typeof window.MNSRussianRoulette.spinChamber === 'function' &&
+            typeof window.MNSRussianRoulette.countdown === 'function' &&
+            chamberEl && countdownEl) {
+
+            window.MNSRussianRoulette.spinChamber({
+                element: chamberEl,
+                callback: function(){
+                    window.MNSRussianRoulette.countdown({
+                        element: countdownEl,
+                        callback: showResult
+                    });
+                }
+            });
+        } else {
+            showResult();
+        }
+    }
+})();
+</script>
         <?php
         return ob_get_clean();
     }

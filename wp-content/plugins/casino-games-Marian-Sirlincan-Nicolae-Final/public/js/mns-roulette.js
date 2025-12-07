@@ -1,7 +1,10 @@
 (function(window){
     'use strict';
 
-    // Orden estándar de la ruleta europea (empezando en 0 y siguiendo el sentido)
+    // ============================================================
+    //             RULETA EUROPEA (EXISTENTE)
+    // ============================================================
+
     var pockets = [
         0,
         32,15,19,4,21,2,25,17,34,6,
@@ -14,13 +17,6 @@
     var fullCircle  = 360;
     var pocketAngle = fullCircle / pocketCount;
 
-    /**
-     * options:
-     *  - wheelEl: elemento que gira (obligatorio)
-     *  - ballEl:  elemento de la bola (opcional)
-     *  - duration: duración en ms (opcional, por defecto 4000)
-     *  - callback(winningNumber): función al terminar el giro
-     */
     function spin(options) {
         options = options || {};
         var wheelEl  = options.wheelEl;
@@ -29,13 +25,11 @@
         var callback = typeof options.callback === 'function' ? options.callback : function(){};
 
         if (!wheelEl) {
-            // Fallback: si no hay rueda, devolvemos un número aleatorio
             var randomNum = Math.floor(Math.random() * 37);
             callback(randomNum);
             return;
         }
 
-        // Reset transición previa
         wheelEl.style.transition = 'none';
         wheelEl.style.transform  = 'rotate(0deg)';
 
@@ -44,24 +38,19 @@
             ballEl.style.transform  = 'rotate(0deg)';
         }
 
-        // Forzar reflow para que el reset se aplique
         void wheelEl.offsetHeight;
 
-        // Elegir bolsillo ganador
         var index = Math.floor(Math.random() * pocketCount);
         var winningNumber = pockets[index];
 
-        // Rotaciones extra enteras + desplazamiento hasta el bolsillo
-        var extraRotations = 3 + Math.floor(Math.random() * 3); // 3 - 5 vueltas completas
+        var extraRotations = 3 + Math.floor(Math.random() * 3);
         var baseAngle      = index * pocketAngle;
-        var randomOffset   = (Math.random() - 0.5) * pocketAngle * 0.4; // pequeño margen para no ser robótico
+        var randomOffset   = (Math.random() - 0.5) * pocketAngle * 0.4;
         var finalAngle     = extraRotations * fullCircle + baseAngle + randomOffset;
 
-        // Animar rueda
         wheelEl.style.transition = 'transform ' + (duration / 1000) + 's cubic-bezier(0.25, 0.8, 0.25, 1)';
         wheelEl.style.transform  = 'rotate(' + (-finalAngle) + 'deg)';
 
-        // Opción: animar bola en sentido contrario
         if (ballEl) {
             ballEl.style.transition = 'transform ' + (duration / 1000) + 's linear';
             ballEl.style.transform  = 'rotate(' + (finalAngle) + 'deg)';
@@ -74,6 +63,157 @@
 
     window.MNSRoulette = {
         spin: spin
+    };
+
+    // ============================================================
+    //             NUEVO: RULETA RUSA EXTENDIDA
+    // ============================================================
+    //
+    // Este módulo controla:
+    //  - Manera 3D de moneda
+    //  - Tambor del revólver
+    //  - Turnos jugador / Paco
+    //  - Cuenta atrás
+    //  - Disparo (BANG / CLICK)
+    //
+
+    window.MNSRussianRoulette = {
+
+        // ------------------------------
+        //  ANIMACIÓN MONEDA 3D
+        // ------------------------------
+        flipCoin: function(options){
+            var element = options.element;
+            var userChoice = options.choice;   // "heads" | "tails"
+            var callback   = options.callback || function(){};
+
+            if (!element) return callback('heads');
+
+            element.classList.remove('rr-coin-anim-heads');
+            element.classList.remove('rr-coin-anim-tails');
+
+            void element.offsetHeight;
+
+            var result = Math.random() < 0.5 ? 'heads' : 'tails';
+
+            if (result === 'heads') {
+                element.classList.add('rr-coin-anim-heads');
+            } else {
+                element.classList.add('rr-coin-anim-tails');
+            }
+
+            setTimeout(function(){
+                callback(result);
+            }, 2000);
+        },
+
+        // ------------------------------
+        //  GIRAR TAMBOR 3D
+        // ------------------------------
+        spinChamber: function(options){
+            var element = options.element;
+            var callback = options.callback || function(){};
+
+            if (!element) return callback();
+
+            element.classList.add('rr-chamber-spin');
+
+            setTimeout(function(){
+                element.classList.remove('rr-chamber-spin');
+                callback();
+            }, 1200);
+        },
+
+        // ------------------------------
+        //  CUENTA ATRÁS 3,2,1
+        // ------------------------------
+        countdown: function(options){
+            var element  = options.element;
+            var callback = options.callback || function(){};
+            var n = 3;
+
+            if (!element) return callback();
+
+            function tick(){
+                element.textContent = n;
+                n--;
+                if (n < 0) {
+                    element.textContent = '';
+                    callback();
+                } else {
+                    setTimeout(tick, 800);
+                }
+            }
+
+            tick();
+        },
+
+        // ------------------------------
+        //  DISPARO (BANG / CLICK)
+        // ------------------------------
+        fire: function(options){
+            var bangScreen  = options.bangElement;  
+            var emptyScreen = options.emptyElement; 
+            var callback    = options.callback || function(){};
+
+            var fatal = (Math.floor(Math.random() * 6) === 0);
+
+            if (fatal) {
+                if (bangScreen) {
+                    bangScreen.classList.add('rr-bang-show');
+                    setTimeout(function(){
+                        bangScreen.classList.remove('rr-bang-show');
+                        callback(true);  
+                    }, 1500);
+                } else {
+                    callback(true);
+                }
+            } else {
+                if (emptyScreen) {
+                    emptyScreen.classList.add('rr-empty-show');
+                    setTimeout(function(){
+                        emptyScreen.classList.remove('rr-empty-show');
+                        callback(false);
+                    }, 1000);
+                } else {
+                    callback(false);
+                }
+            }
+        },
+
+        // ------------------------------
+        //  TURNO AUTOMÁTICO DE PACO
+        // ------------------------------
+        pacoTurn: function(options){
+            var chamberEl = options.chamberElement;
+            var countdownEl = options.countdownElement;
+            var bangEl = options.bangElement;
+            var emptyEl = options.emptyElement;
+            var callback = options.callback || function(){};
+
+            this.spinChamber({
+                element: chamberEl,
+                callback: () => {
+
+                    this.countdown({
+                        element: countdownEl,
+                        callback: () => {
+
+                            this.fire({
+                                bangElement: bangEl,
+                                emptyElement: emptyEl,
+                                callback: (isFatal) => {
+                                    callback(isFatal);
+                                }
+                            });
+
+                        }
+                    });
+
+                }
+            });
+        }
+
     };
 
 })(window);

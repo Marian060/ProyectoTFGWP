@@ -48,14 +48,14 @@ class MNS_Login_Helper {
      */
     public static function restrict_admin_area() {
 
-        // 1️⃣ Usuario NO logueado intenta acceder a /wp-admin → ir a /login
+        // Usuario NO logueado intenta acceder a /wp-admin → ir a /login
         if ( is_admin() && ! is_user_logged_in() ) {
             $login_url = self::get_page_url_by_slug( Casino_Login_MNS::PAGE_LOGIN_SLUG );
             wp_safe_redirect( $login_url );
             exit;
         }
 
-        // 2️⃣ Usuario logueado SIN permisos administrativos → ir a /perfil
+        // Usuario logueado SIN permisos administrativos → ir a /perfil
         if ( is_admin() && is_user_logged_in() && ! current_user_can( 'manage_options' ) && ! defined( 'DOING_AJAX' ) ) {
             $profile_url = self::get_page_url_by_slug( Casino_Login_MNS::PAGE_PROFILE_SLUG );
             wp_safe_redirect( $profile_url );

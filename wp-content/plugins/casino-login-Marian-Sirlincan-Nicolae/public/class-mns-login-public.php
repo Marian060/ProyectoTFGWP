@@ -101,13 +101,15 @@ class MNS_Login_Public {
             return;
         }
 
-        $username   = isset( $_POST['mns_reg_user'] ) ? sanitize_user( $_POST['mns_reg_user'] ) : '';
-        $email      = isset( $_POST['mns_reg_email'] ) ? sanitize_email( $_POST['mns_reg_email'] ) : '';
-        $birthdate  = isset( $_POST['mns_reg_birthdate'] ) ? sanitize_text_field( $_POST['mns_reg_birthdate'] ) : '';
-        $pass1      = isset( $_POST['mns_reg_pass1'] ) ? $_POST['mns_reg_pass1'] : '';
-        $pass2      = isset( $_POST['mns_reg_pass2'] ) ? $_POST['mns_reg_pass2'] : '';
-        $terms      = ! empty( $_POST['mns_reg_terms'] );
-        $redirect_to= isset( $_POST['mns_redirect_to'] ) ? esc_url_raw( $_POST['mns_redirect_to'] ) : home_url( '/' );
+        $username    = isset( $_POST['mns_reg_user'] ) ? sanitize_user( $_POST['mns_reg_user'] ) : '';
+        $email       = isset( $_POST['mns_reg_email'] ) ? sanitize_email( $_POST['mns_reg_email'] ) : '';
+        $birthdate   = isset( $_POST['mns_reg_birthdate'] ) ? sanitize_text_field( $_POST['mns_reg_birthdate'] ) : '';
+        $pass1       = isset( $_POST['mns_reg_pass1'] ) ? $_POST['mns_reg_pass1'] : '';
+        $pass2       = isset( $_POST['mns_reg_pass2'] ) ? $_POST['mns_reg_pass2'] : '';
+        $terms       = ! empty( $_POST['mns_reg_terms'] );
+        $privacy     = ! empty( $_POST['mns_reg_privacy'] );
+        $responsible = ! empty( $_POST['mns_reg_responsible'] );
+        $redirect_to = isset( $_POST['mns_redirect_to'] ) ? esc_url_raw( $_POST['mns_redirect_to'] ) : home_url( '/' );
 
         // Validaciones básicas
         if ( empty( $username ) || empty( $email ) || empty( $birthdate ) || empty( $pass1 ) || empty( $pass2 ) ) {
@@ -136,6 +138,14 @@ class MNS_Login_Public {
 
         if ( ! $terms ) {
             self::$register_errors[] = __( 'Debes aceptar los términos y condiciones.', 'casino-login-mns' );
+        }
+
+        if ( ! $privacy ) {
+            self::$register_errors[] = __( 'Debes aceptar la política de privacidad.', 'casino-login-mns' );
+        }
+
+        if ( ! $responsible ) {
+            self::$register_errors[] = __( 'Debes confirmar el uso responsable y que entiendes que es un entorno educativo sin dinero real.', 'casino-login-mns' );
         }
 
         // Validar mayoría de edad (18+)
@@ -264,7 +274,18 @@ class MNS_Login_Public {
 
                 <div class="mns-form-group">
                     <label for="mns_login_pass" class="mns-label mns-label-pass"><?php esc_html_e( 'Contraseña', 'casino-login-mns' ); ?></label>
-                    <input type="password" id="mns_login_pass" name="mns_login_pass" class="mns-input mns-input-pass" required />
+                    <div class="mns-password-wrapper">
+                        <input type="password" id="mns_login_pass" name="mns_login_pass" class="mns-input mns-input-pass" required />
+                        <button type="button"
+                                class="mns-toggle-password"
+                                data-target="#mns_login_pass"
+                                aria-label="<?php esc_attr_e( 'Mostrar u ocultar contraseña', 'casino-login-mns' ); ?>">
+                            👁
+                        </button>
+                    </div>
+                    <p class="mns-password-hint">
+                        <?php esc_html_e( 'La contraseña debe tener al menos 6 caracteres.', 'casino-login-mns' ); ?>
+                    </p>
                 </div>
 
                 <div class="mns-form-group mns-form-remember">
@@ -272,6 +293,19 @@ class MNS_Login_Public {
                         <input type="checkbox" name="mns_login_remember" class="mns-input-checkbox mns-input-remember" />
                         <?php esc_html_e( 'Mantener sesión iniciada', 'casino-login-mns' ); ?>
                     </label>
+                </div>
+
+                <div class="mns-form-group mns-form-policies">
+                    <a href="#"
+                       class="mns-policies-toggle"
+                       data-target="#mns-login-policies"
+                       aria-expanded="false">
+                        <?php esc_html_e( 'Ver políticas y aviso educativo', 'casino-login-mns' ); ?>
+                    </a>
+                    <div id="mns-login-policies" class="mns-policies-content" style="display:none;">
+                        <p><?php esc_html_e( 'Casino M.N.S es un entorno educativo. No se utilizan fichas ni dinero real con valor fuera del sistema. Todas las partidas son simulaciones.', 'casino-login-mns' ); ?></p>
+                        <p><?php esc_html_e( 'Al usar esta plataforma aceptas los términos del proyecto, la política de privacidad del sitio y te comprometes a un uso responsable.', 'casino-login-mns' ); ?></p>
+                    </div>
                 </div>
 
                 <input type="hidden" name="mns_redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
@@ -339,19 +373,66 @@ class MNS_Login_Public {
 
                 <div class="mns-form-group">
                     <label for="mns_reg_pass1" class="mns-label mns-label-pass1"><?php esc_html_e( 'Contraseña', 'casino-login-mns' ); ?></label>
-                    <input type="password" id="mns_reg_pass1" name="mns_reg_pass1" class="mns-input mns-input-pass1" required />
+                    <div class="mns-password-wrapper">
+                        <input type="password" id="mns_reg_pass1" name="mns_reg_pass1" class="mns-input mns-input-pass1" required />
+                        <button type="button"
+                                class="mns-toggle-password"
+                                data-target="#mns_reg_pass1"
+                                aria-label="<?php esc_attr_e( 'Mostrar u ocultar contraseña', 'casino-login-mns' ); ?>">
+                            👁
+                        </button>
+                    </div>
+                    <p class="mns-password-hint">
+                        <?php esc_html_e( 'La contraseña debe tener al menos 6 caracteres.', 'casino-login-mns' ); ?>
+                    </p>
                 </div>
 
                 <div class="mns-form-group">
                     <label for="mns_reg_pass2" class="mns-label mns-label-pass2"><?php esc_html_e( 'Confirmar contraseña', 'casino-login-mns' ); ?></label>
-                    <input type="password" id="mns_reg_pass2" name="mns_reg_pass2" class="mns-input mns-input-pass2" required />
+                    <div class="mns-password-wrapper">
+                        <input type="password" id="mns_reg_pass2" name="mns_reg_pass2" class="mns-input mns-input-pass2" required />
+                        <button type="button"
+                                class="mns-toggle-password"
+                                data-target="#mns_reg_pass2"
+                                aria-label="<?php esc_attr_e( 'Mostrar u ocultar contraseña', 'casino-login-mns' ); ?>">
+                            👁
+                        </button>
+                    </div>
                 </div>
 
                 <div class="mns-form-group mns-form-terms">
                     <label class="mns-label mns-label-terms">
                         <input type="checkbox" name="mns_reg_terms" class="mns-input-checkbox mns-input-terms" required />
-                        <?php esc_html_e( 'Acepto los términos y condiciones', 'casino-login-mns' ); ?>
+                        <?php esc_html_e( 'Acepto los términos y condiciones del proyecto educativo.', 'casino-login-mns' ); ?>
                     </label>
+                </div>
+
+                <div class="mns-form-group mns-form-privacy">
+                    <label class="mns-label mns-label-privacy">
+                        <input type="checkbox" name="mns_reg_privacy" class="mns-input-checkbox mns-input-privacy" required />
+                        <?php esc_html_e( 'He leído y acepto la política de privacidad del sitio.', 'casino-login-mns' ); ?>
+                    </label>
+                </div>
+
+                <div class="mns-form-group mns-form-responsible">
+                    <label class="mns-label mns-label-responsible">
+                        <input type="checkbox" name="mns_reg_responsible" class="mns-input-checkbox mns-input-responsible" required />
+                        <?php esc_html_e( 'Entiendo que es un entorno educativo sin dinero real y me comprometo a un uso responsable.', 'casino-login-mns' ); ?>
+                    </label>
+                </div>
+
+                <div class="mns-form-group mns-form-policies">
+                    <a href="#"
+                       class="mns-policies-toggle"
+                       data-target="#mns-register-policies"
+                       aria-expanded="false">
+                        <?php esc_html_e( 'Ver políticas completas y aviso educativo', 'casino-login-mns' ); ?>
+                    </a>
+                    <div id="mns-register-policies" class="mns-policies-content" style="display:none;">
+                        <p><?php esc_html_e( 'Este registro forma parte de un proyecto educativo de simulación de casino. No se ofrecen premios ni se maneja dinero real.', 'casino-login-mns' ); ?></p>
+                        <p><?php esc_html_e( 'Las fichas son elementos virtuales sin valor monetario. El objetivo es aprender conceptos de desarrollo web, lógica de juego y experiencia de usuario.', 'casino-login-mns' ); ?></p>
+                        <p><?php esc_html_e( 'Puedes ejercer tus derechos de protección de datos siguiendo la política de privacidad publicada en el sitio principal.', 'casino-login-mns' ); ?></p>
+                    </div>
                 </div>
 
                 <input type="hidden" name="mns_redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
@@ -427,7 +508,6 @@ class MNS_Login_Public {
                         <p class="mns-profile-age">
                             <?php
                             printf(
-                                /* translators: %d: edad */
                                 esc_html__( 'Edad: %d años', 'casino-login-mns' ),
                                 intval( $age )
                             );
